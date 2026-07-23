@@ -1,0 +1,320 @@
+/* ===================== Block: Shared Card ===================== */
+.maybi-card {
+  background: rgba(242, 227, 216, 0.3);
+  border: 1px solid rgba(242, 227, 216);
+  border-radius: 1.6rem;
+  box-shadow: var(--shadow-1);
+  padding: clamp(1.2rem, 3vw, 2.8rem) clamp(0.8rem, 2vw, 2.4rem);
+}
+
+/* ===================== Block: commission_policy ===================== */
+
+.commission_policy-header {
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.commission_policy-title {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2.5vw, 2.1rem);
+  letter-spacing: 0.01em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.commission_policy-header p {
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  color: var(--black-opacity2);
+}
+
+.commission_policy-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  border: 1px solid rgba(242, 227, 216);
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.commission_policy-table-head th {
+  text-align: center;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  color: var(--red);
+  font-weight: 700;
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(0.6rem, 1.5vw, 1.2rem);
+  background: rgba(242, 227, 216);
+  border-bottom: 1px solid rgba(220, 200, 185);
+  border-right: 1px solid rgba(220, 200, 185);
+}
+
+.commission_policy-table-head th:nth-child(1) {
+  width: 40%;
+}
+
+.commission_policy-table-head th:nth-child(2) {
+  width: 30%;
+}
+
+.commission_policy-table-head th:nth-child(3) {
+  width: 30%;
+}
+
+.commission_policy-table-head th:last-child {
+  border-right: none;
+}
+
+.commission_policy-row td {
+  padding: clamp(0.6rem, 1.5vw, 1.1rem) clamp(0.6rem, 1.5vw, 1.2rem);
+  background: var(--white);
+  border-bottom: 1px solid rgba(220, 200, 185);
+  border-right: 1px solid rgba(220, 200, 185);
+  vertical-align: middle;
+}
+
+.commission_policy-row td:last-child {
+  border-right: none;
+}
+
+.commission_policy-row:last-child td {
+  border-bottom: none;
+}
+
+.commission_policy-cell-tier,
+.commission_policy-cell-rate,
+.commission_policy-cell-bonus {
+  text-align: center;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.commission_policy-footnote {
+  margin-top: 1.2rem;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--black);
+}
+
+/* ===================== Block: member_registration ===================== */
+.member_registration {
+  text-align: center;
+}
+
+.member_registration-title {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.member_registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.form-input {
+  flex: 1;
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.3rem;
+  border: 1px solid var(--input-border-custom);
+  border-radius: 1rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-input::placeholder {
+  color: #6c757d;
+}
+
+.member_registration-submit {
+  width: 100%;
+  padding: 1.4rem;
+  background: rgba(135, 20, 0);
+  color: var(--white);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+.member_registration-submit:hover {
+  opacity: 0.9;
+}
+
+.member_registration-note {
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+/* ===================== Block: sales_process ===================== */
+.sales_process {
+  text-align: center;
+}
+
+.sales_process-title {
+  font-weight: 700;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  letter-spacing: 0.02em;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.process-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  color: var(--red);
+  background-color: transparent;
+  z-index: 1;
+}
+
+.step-icon svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  stroke-width: 1.5;
+}
+
+.step-number {
+  font-weight: 700;
+  color: var(--red);
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-text {
+  font-size: 1.1rem;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+/* Connectors */
+.process-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 3.2rem;
+  left: calc(100% - 2rem);
+  width: 6rem;
+  height: 1rem;
+  color: rgba(135, 20, 0, 0.4);
+  background:
+    conic-gradient(from 225deg at 100% 50%, currentColor 90deg, transparent 0) right center / 0.5rem 1rem no-repeat,
+    linear-gradient(to right, transparent, currentColor) left center / calc(100% - 0.4rem) 1.5px no-repeat;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+/* ===================== Block: Conditions ===================== */
+.conditions-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.conditions-content {
+  flex: 0 0 50%;
+  padding-right: 2rem;
+}
+
+.bag-front {
+  position: relative;
+  width: 85%;
+  margin-left: 15%;
+  z-index: 2;
+}
+
+.bag-back {
+  position: absolute;
+  bottom: 0;
+  left: -15%;
+  width: 80%;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.conditions-title {
+  font-weight: 700;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.conditions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.conditions-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+.conditions-list li svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--red);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.conditions-highlight {
+  background: rgba(242, 227, 216, 0.6);
+  padding: 1.2rem 4rem 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  color: var(--red);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: inline-block;
+  position: relative;
+  margin-right: -8rem;
+  z-index: 1;
+}
