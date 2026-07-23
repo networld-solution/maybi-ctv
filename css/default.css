@@ -20,7 +20,7 @@
   --black-opacity2: rgba(0, 0, 0, 0.8);
   --shadow-1: 0px 6px 34px rgba(215, 216, 222, 0.41);
   --input-border-custom: #ced4da;
-  --bg-list: #fbf8f3;
+  --bg-list: rgba(242, 227, 216, 0.3);
 }
 
 body {
