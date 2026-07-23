@@ -2,21 +2,21 @@
 .maybi-card {
   background: rgba(242, 227, 216, 0.3);
   border: 1px solid rgba(242, 227, 216);
-  border-radius: 1.6rem;
+  border-radius: 1.6em;
   box-shadow: var(--shadow-1);
-  padding: clamp(1.2rem, 3vw, 2.8rem) clamp(0.8rem, 2vw, 2.4rem);
+  padding: clamp(1.2em, 3vw, 2.8em) clamp(0.8em, 2vw, 2.4em);
 }
 
 /* ===================== Block: commission_policy ===================== */
 
 .commission_policy-header {
   text-align: center;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.4em;
 }
 
 .commission_policy-title {
   font-weight: 700;
-  font-size: clamp(1.2rem, 2.5vw, 2.1rem);
+  font-size: 2rem;
   letter-spacing: 0.01em;
   color: var(--red);
   text-transform: uppercase;
@@ -25,7 +25,7 @@
 .commission_policy-header p {
   font-style: italic;
   font-weight: 700;
-  margin-top: 0.8rem;
+  margin-top: 0.8em;
   color: var(--black-opacity2);
 }
 
@@ -33,18 +33,18 @@
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  font-size: 1.35rem;
   border: 1px solid rgba(242, 227, 216);
-  border-radius: 1.6rem;
+  border-radius: 1.6em;
   overflow: hidden;
 }
 
 .commission_policy-table-head th {
   text-align: center;
-  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-size: 1.2rem;
   color: var(--red);
   font-weight: 700;
-  padding: clamp(0.5rem, 1vw, 1rem) clamp(0.6rem, 1.5vw, 1.2rem);
+  padding: clamp(0.5em, 1vw, 1em) clamp(0.6em, 1.5vw, 1.2em);
   background: rgba(242, 227, 216);
   border-bottom: 1px solid rgba(220, 200, 185);
   border-right: 1px solid rgba(220, 200, 185);
@@ -67,7 +67,7 @@
 }
 
 .commission_policy-row td {
-  padding: clamp(0.6rem, 1.5vw, 1.1rem) clamp(0.6rem, 1.5vw, 1.2rem);
+  padding: clamp(0.6em, 1.5vw, 1.1em) clamp(0.6em, 1.5vw, 1.2em);
   background: var(--white);
   border-bottom: 1px solid rgba(220, 200, 185);
   border-right: 1px solid rgba(220, 200, 185);
@@ -91,8 +91,8 @@
 }
 
 .commission_policy-footnote {
-  margin-top: 1.2rem;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-top: 1.2em;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.6;
   color: var(--black);
@@ -105,33 +105,33 @@
 
 .member_registration-title {
   font-weight: 700;
-  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-size: 2rem;
   color: var(--red);
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
   letter-spacing: 0.02em;
 }
 
 .member_registration-form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  margin-bottom: 1.2rem;
+  gap: 1.2em;
+  margin-bottom: 1.2em;
 }
 
 .form-row {
   display: flex;
-  gap: 1.2rem;
+  gap: 1.2em;
   width: 100%;
 }
 
 .form-input {
   flex: 1;
   width: 100%;
-  padding: 1.2rem 1.6rem;
+  padding: 1.2em 1.6em;
   font-size: 1.3rem;
   border: 1px solid var(--input-border-custom);
-  border-radius: 1rem;
+  border-radius: 1em;
   outline: none;
   font-family: inherit;
 }
@@ -142,16 +142,16 @@
 
 .member_registration-submit {
   width: 100%;
-  padding: 1.4rem;
+  padding: 1.4em;
   background: rgba(135, 20, 0);
   color: var(--white);
   border: none;
-  border-radius: 1rem;
+  border-radius: 1em;
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
   transition: opacity 0.3s;
 }
 
@@ -167,22 +167,27 @@
 /* ===================== Block: sales_process ===================== */
 .sales_process {
   text-align: center;
+  min-width: 0;
 }
 
 .sales_process-title {
   font-weight: 700;
-  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-size: 2rem;
   color: var(--red);
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
   letter-spacing: 0.02em;
+  margin: 0 auto;
+  padding: 0 2em;
+  width: auto;
+  float: none;
 }
 
 .process-steps {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .process-step {
@@ -194,22 +199,22 @@
 }
 
 .step-icon {
-  width: 6.4rem;
-  height: 6.4rem;
+  width: 4.8em;
+  height: 4.8em;
   border: 1px solid var(--red);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.2em;
   color: var(--red);
   background-color: transparent;
   z-index: 1;
 }
 
 .step-icon svg {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 2.5em;
+  height: 2.5em;
   stroke-width: 1.5;
 }
 
@@ -217,7 +222,7 @@
   font-weight: 700;
   color: var(--red);
   font-size: 1.4rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.4em;
 }
 
 .step-text {
@@ -230,14 +235,14 @@
 .process-step:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 3.2rem;
-  left: calc(100% - 2rem);
-  width: 6rem;
-  height: 1rem;
+  top: 2.4em;
+  left: calc(50% + 3.7em);
+  width: calc(100% - 6.4em);
+  height: 1em;
   color: rgba(135, 20, 0, 0.4);
   background:
-    conic-gradient(from 225deg at 100% 50%, currentColor 90deg, transparent 0) right center / 0.5rem 1rem no-repeat,
-    linear-gradient(to right, transparent, currentColor) left center / calc(100% - 0.4rem) 1.5px no-repeat;
+    conic-gradient(from 225deg at 100% 50%, currentColor 90deg, transparent 0) right center / 0.5em 1em no-repeat,
+    linear-gradient(to right, transparent, currentColor) left center / calc(100% - 0.4em) 1.5px no-repeat;
   transform: translateY(-50%);
   z-index: 0;
 }
@@ -245,13 +250,13 @@
 /* ===================== Block: Conditions ===================== */
 .conditions-layout {
   display: flex;
-  gap: 2rem;
+  gap: 2em;
   align-items: center;
 }
 
 .conditions-content {
   flex: 0 0 50%;
-  padding-right: 2rem;
+  padding-right: 2em;
 }
 
 .bag-front {
@@ -272,48 +277,48 @@
 
 .conditions-title {
   font-weight: 700;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: 2rem;
   color: var(--red);
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
   letter-spacing: 0.02em;
 }
 
 .conditions-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2em 0;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.2em;
 }
 
 .conditions-list li {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
   font-size: 1.2rem;
   color: var(--black);
   line-height: 1.4;
 }
 
 .conditions-list li svg {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.6em;
+  height: 1.6em;
   color: var(--red);
   flex-shrink: 0;
 }
 
 .conditions-highlight {
   background: rgba(242, 227, 216, 0.6);
-  padding: 1.2rem 4rem 1.2rem 1.6rem;
-  border-radius: 0.8rem;
+  padding: 1.2em 4em 1.2em 1.6em;
+  border-radius: 0.8em;
   font-weight: 700;
   color: var(--red);
   font-size: 1.2rem;
   line-height: 1.5;
   display: inline-block;
   position: relative;
-  margin-right: -8rem;
+  margin-right: -8em;
   z-index: 1;
 }
