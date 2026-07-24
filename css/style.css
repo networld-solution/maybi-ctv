@@ -3,7 +3,11 @@
   flex-direction: column;
   padding: 2em;
   gap: 2em;
-  background-color: var(--bg-list);
+  background-color: var(--bg-content);
+  border-radius: 50% 50% 0 0 / 4em 4em 0 0;
+  margin-top: -4em;
+  position: relative;
+  z-index: 1;
 }
 
 .content_title {
@@ -47,13 +51,13 @@
 
 .benefits_item {
   flex: 1;
-  padding: 2em 1.5em;
-  background-color: var(--bg-list);
-  border-radius: 1em;
-  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  padding: 2em 1.5em;
+  border-radius: 1em;
+  background-color: var(--bg-list);
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.06);
 }
 
 .benefits_item-hd {
@@ -87,9 +91,6 @@
   grid-template-columns: 3.2fr 6.8fr;
   align-items: center;
   gap: 3em;
-  padding: 2em;
-  border-radius: 1em;
-  background-color: var(--bg-list);
 }
 
 .categories_info {
@@ -142,12 +143,19 @@
   border-radius: 1em;
 }
 
-/* ===================== Block: commission_policy ===================== */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--red);
+  margin-bottom: 1em;
+  letter-spacing: 0.02em;
+}
 
+/* ===================== Block: commission_policy ===================== */
 .maybi-card {
   padding: 2em;
-  background: rgba(242, 227, 216, 0.3);
-  border-radius: 1.6em;
+  background: var(--bg-list);
+  border-radius: 1em;
 }
 
 .commission_policy-header {
@@ -155,13 +163,7 @@
   margin-bottom: 1.4em;
 }
 
-.commission_policy-title {
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 0.01em;
-  color: var(--red);
-  text-transform: uppercase;
-}
+
 
 .commission_policy-header p {
   font-style: italic;
@@ -223,20 +225,18 @@
   border-bottom: none;
 }
 
-.commission_policy-cell-tier,
-.commission_policy-cell-rate,
-.commission_policy-cell-bonus {
+.commission_policy-cell {
   text-align: center;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--black);
 }
 
 .commission_policy-footnote {
-  margin-top: 1.2em;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.6;
   color: var(--black);
+  margin-top: 1.2em;
 }
 
 /* ===================== Block: member_registration ===================== */
@@ -244,20 +244,11 @@
   text-align: center;
 }
 
-.member_registration-title {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--red);
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: 0.02em;
-}
-
 .member_registration-form {
   display: flex;
   flex-direction: column;
-  gap: 1.2em;
-  margin-bottom: 1.2em;
+  gap: 1em;
+  margin-bottom: 1em;
 }
 
 .form-row {
@@ -282,17 +273,15 @@
 }
 
 .member_registration-submit {
-  width: 100%;
-  padding: 1.4em;
-  background: rgba(135, 20, 0);
-  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: bold;
   border: none;
   border-radius: 1em;
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  background: rgba(135, 20, 0);
+  color: var(--white);
   cursor: pointer;
-  margin-top: 0.5em;
+  width: 100%;
+  padding: 1em;
   transition: opacity 0.3s;
 }
 
@@ -312,12 +301,7 @@
 }
 
 .sales_process-title {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--red);
-  text-transform: uppercase;
   margin-bottom: 3em;
-  letter-spacing: 0.02em;
   margin: 0 auto;
   padding: 0 2em;
   width: auto;
@@ -340,17 +324,16 @@
 }
 
 .step-icon {
-  width: 4.8em;
-  height: 4.8em;
-  border: 1px solid var(--red);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  width: 4.8em;
+  height: 4.8em;
   margin-bottom: 1.2em;
   color: var(--red);
   background-color: transparent;
-  z-index: 1;
 }
 
 .step-icon svg {
@@ -360,14 +343,14 @@
 }
 
 .step-number {
+  font-size: 1.4rem;
   font-weight: bold;
   color: var(--red);
-  font-size: 1.4rem;
   margin-bottom: 0.4em;
 }
 
 .step-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--black);
   line-height: 1.4;
 }
@@ -387,7 +370,6 @@
     linear-gradient(to right, transparent, currentColor) left center /
       calc(100% - 0.4em) 1.5px no-repeat;
   transform: translateY(-50%);
-  z-index: 0;
 }
 
 /* ===================== Block: Conditions ===================== */
@@ -402,67 +384,40 @@
   padding-right: 2em;
 }
 
-.bag-front {
-  position: relative;
-  width: 85%;
-  margin-left: 15%;
-  z-index: 2;
-}
 
-.bag-back {
-  position: absolute;
-  bottom: 0;
-  left: -15%;
-  width: 80%;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-.conditions-title {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--red);
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  letter-spacing: 0.02em;
-}
 
 .conditions-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2em 0;
   display: flex;
   flex-direction: column;
   gap: 1.2em;
+  padding: 0;
+  margin: 0 0 2em 0;
 }
 
 .conditions-list li {
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 1em;
-  font-size: 1.2rem;
   color: var(--black);
   line-height: 1.4;
+  gap: 1em;
 }
 
 .conditions-list li svg {
+  flex-shrink: 0;
   width: 1.6em;
   height: 1.6em;
   color: var(--red);
-  flex-shrink: 0;
 }
 
 .conditions-highlight {
-  background: rgba(242, 227, 216, 0.6);
-  padding: 1.2em 4em 1.2em 1.6em;
-  border-radius: 0.8em;
-  font-weight: bold;
-  color: var(--red);
   font-size: 1.2rem;
-  line-height: 1.5;
+  font-weight: bold;
   display: inline-block;
-  position: relative;
+  background: rgba(242, 227, 216, 0.6);
+  border-radius: 0.8em;
+  color: var(--red);
+  line-height: 1.5;
+  padding: 1.5em;
   margin-right: -8em;
-  z-index: 1;
 }
-

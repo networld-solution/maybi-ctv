@@ -55,16 +55,18 @@
   }
   .benefits_list {
     flex-direction: column;
-    padding: 1rem;
   }
-  .benefits_title {
-    font-size: clamp(1.1rem, 1.7vw, 2rem);
+  .content_title {
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    text-align: center;
+    gap: 1em;
   }
+
   .benefits_item-ttl {
-    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    font-size: clamp(1.1rem, 1.5vw, 1.6rem);
   }
   .benefits_item-desc {
-    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
   }
   .categories {
     grid-template-columns: 1fr;
@@ -72,12 +74,12 @@
     padding: 1.5rem;
   }
   .categories_title {
-    font-size: clamp(1.1rem, 1.7vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
     margin-bottom: 1rem;
     text-align: center;
   }
   .categories_name {
-    font-size: clamp(1.1rem, 1.4vw, 1.6rem);
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
   }
   .categories_gallery {
     overflow-x: auto;
@@ -88,21 +90,19 @@
   }
 
   /* From sec456 */
-  .commission_policy-title {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+  .section-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   }
   .commission_policy-table {
     font-size: clamp(1rem, 1.5vw, 1.35rem);
   }
   .commission_policy-table-head th {
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
   }
   .commission_policy-footnote {
     font-size: clamp(1rem, 1.5vw, 1.2rem);
   }
-  .member_registration-title {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
-  }
+
   .form-input {
     font-size: clamp(1rem, 1.5vw, 1.3rem);
   }
@@ -112,23 +112,19 @@
   .member_registration-note {
     font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   }
-  .sales_process-title {
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
-  }
+
   .step-number {
     font-size: clamp(1.1rem, 1.8vw, 1.4rem);
   }
   .step-text {
-    font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+    font-size: clamp(1rem, 1.3vw, 1.1rem);
   }
-  .conditions-title {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
-  }
+
   .conditions-list li {
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
   }
   .conditions-highlight {
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
   }
 }
 
