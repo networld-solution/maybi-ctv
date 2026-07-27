@@ -1,0 +1,144 @@
+/* 
+* <576:     xs
+* 576-768:  sm
+* 768-992:  md
+* 992-1200: lg
+* 1200 -1400: xl
+* >= 1400:  xxl
+*/
+
+/* ===================== NEW SEC 456 LAYOUT RESPONSIVE ===================== */
+@media (max-width: 992px) {
+  .process-steps {
+    overflow-x: auto;
+    padding-bottom: 1.5rem;
+    justify-content: flex-start;
+  }
+  .process-step {
+    flex: 0 0 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .conditions-layout {
+    flex-direction: column;
+  }
+  .conditions-content {
+    padding-right: 0;
+  }
+  .conditions-highlight {
+    margin-right: 0;
+    padding-right: 1.6rem;
+  }
+  .conditions-image {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 10px;
+  }
+  .benefits_list {
+    flex-direction: column;
+  }
+  .content_title {
+    font-size: clamp(1.3rem, 1.7vw, 2rem);
+    text-align: center;
+    gap: 1em;
+  }
+
+  .benefits_item-ttl {
+    font-size: clamp(1.1rem, 1.5vw, 1.6rem);
+  }
+  .benefits_item-desc {
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+  }
+  .categories {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  .categories_title {
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .categories_name {
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+  }
+  .categories_gallery {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  .categories_thumb {
+    flex: 0 0 45%;
+  }
+
+  /* From sec456 */
+  .section-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  }
+  .commission_policy-table {
+    font-size: clamp(1rem, 1.5vw, 1.35rem);
+  }
+  .commission_policy-table-head th {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+  .commission_policy-footnote {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+
+  .form-input {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+  }
+  .member_registration-submit {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+  }
+  .member_registration-note {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  }
+
+  .step-number {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  }
+  .step-text {
+    font-size: clamp(1rem, 1.3vw, 1.1rem);
+  }
+
+  .conditions-list li {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+  .conditions-highlight {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 609px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
