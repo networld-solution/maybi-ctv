@@ -22,6 +22,8 @@
   --input-border-custom: #ced4da;
   --bg-content: #fdfaf5;
   --bg-list: rgba(242, 227, 216, 0.3);
+  --text-green: #1b5b31;
+  --bg-pink: #fef7f1;
 }
 
 body {

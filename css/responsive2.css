@@ -1,0 +1,64 @@
+/* 
+* <576:     xs
+* 576-768:  sm
+* 768-992:  md
+* 992-1200: lg
+* 1200 -1400: xl
+* >= 1400:  xxl
+*/
+
+@media (max-width: 1440px) {
+  .maybi-about > h2 {
+    font-size: clamp(2.8rem, 3.5vw, 3.5rem);
+  }
+
+  .box-thumb {
+    width: clamp(3em, 3vw, 6em);
+    height: clamp(3em, 3vw, 6em);
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .maybi-about > h2 {
+    font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+  }
+}
+
+@media (max-width: 575px) {
+  .maybi-about > h2 {
+    font-size: clamp(9px, 2.5vw, 1.7rem);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .maybi-about > h2 {
+    font-size: clamp(2.3rem, 2.5vw, 2.8rem);
+  }
+}
+
+@media only screen and (min-width: 609px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
