@@ -15,6 +15,14 @@
     display: none;
   }
 
+  .maybi-solution {
+    grid-template-columns: 1fr;
+  }
+
+  .arrow-pointer {
+    display: none;
+  }
+  
   .maybi-footer {
     grid-template-columns: 1fr;
     gap: 2em;
