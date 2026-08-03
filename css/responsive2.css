@@ -6,12 +6,6 @@
 * 1200 -1400: xl
 * >= 1400:  xxl
 */
-@media (max-width: 1440px) {
-  .benefits_item-ttl {
-    font-size: clamp(10px, 1.2vw, 1.4em);
-  }
-}
-
 @media (max-width: 992px) {
   .policy-zone-left,
   .policy-zone-right {
@@ -43,12 +37,24 @@
 }
 
 @media (max-width: 768px) {
-  .maybi-about > h2 {
-    font-size: clamp(9px, 2.8vw, 3.2em);
+  .section{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-title  {
+    font-size: clamp(14px, 4vw, 2.8em);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-title > br{
+    display: block;
   }
 
   .box {
     width: 47%;
+    justify-content: center;
   }
 
   .box-thumb {
@@ -81,11 +87,11 @@
 
   .solution-item {
     flex: none;
-    width: 24%;
+    width: 30%;
   }
 
   .solution > h2 {
-    font-size: clamp(14px, 3.3vw, 2.5em);
+    font-size: clamp(12px, 4vw, 3em);
   }
 
   .solution-icon {
@@ -99,7 +105,7 @@
   }
 
   .solution-text {
-    font-size: clamp(8px, 2vw, 1.4em);
+    font-size: clamp(8px, 1.9vw, 1.8em);
   }
 
   .arrow-pointer {
@@ -114,7 +120,7 @@
     align-items: center;
     width: 70%;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   .solution::before {
     content: none;
@@ -135,7 +141,7 @@
   }
 
   .steps-title {
-    font-size: clamp(6px, 2.8vw, 2em);
+    font-size: clamp(6px, 2.8vw, 2.4em);
   }
 
   .maybi-solution {
@@ -144,8 +150,17 @@
 
   /* mục benefit */
   .benefit-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+
+  .benefits_item{
+    padding:2em;
+  }
+
+  .benefits_item-ttl {
+    font-size: clamp(12px, 2.6vw, 2.4em);
+  }
+
 
   /* Mục Categories */
   .categories {
@@ -165,7 +180,7 @@
   .categories_title {
     flex: 1;
     padding-bottom: 0;
-    font-size: clamp(20px, 4vw, 3rem);
+    font-size: clamp(20px, 4vw, 4em);
   }
 
   .categories_list {
@@ -303,7 +318,8 @@
   .categories_title {
     flex: 1;
     padding-bottom: 0;
-    font-size: clamp(20px, 4vw, 3rem);
+    font-size: clamp(20px, 4vw, 4em);
+    padding-left: 1em;
   }
 
   .categories_list {
@@ -316,17 +332,13 @@
 }
 
 @media (max-width: 575px) {
-  .box-thumb {
-    height: clamp(10px, 10vw, 6em);
-  }
-
   .solution {
     width: 100%;
     gap: 1.5em;
   }
 
   .solutions-list {
-    gap: 10px;
+    gap: 15px;
   }
 
   .solution-item {
@@ -343,7 +355,7 @@
   }
 
   .solution-text {
-    font-size: clamp(8px, 3vw, 1.2em);
+    font-size: clamp(8px, 3vw, 1.6em);
   }
 
   .solutions-content > h2 {
@@ -360,6 +372,24 @@
 
   .step-item p {
     font-size: clamp(8px, 1.4vw, 2em);
+  }
+
+  .categories_info{
+    flex-direction: column;
+  }
+
+  .categories_title{
+    padding-left: 0;
+    margin-bottom: 1em;
+    font-size: clamp(13px, 4.6vw, 2.6em);
+  }
+
+  .categories_list{
+    width: 100%;
+  }
+
+  .categories_name {
+    font-size: clamp(12px, 4vw, 1.8rem);
   }
 
   .policy-table-head th:nth-child(1) {
@@ -398,13 +428,16 @@
     font-size: clamp(16px, 5.7vw, 2.8rem);
   }
 
+  .benefit-list {
+    grid-template-columns: 1fr;
+  }
+  .benefits_item-ttl {
+    font-size: clamp(12px, 4vw, 2.4em);
+  }
+
   .benefits_item-hd {
     width: clamp(30px, 10.5vw, 8em);
     height: clamp(30px, 10.5vw, 8em);
-  }
-
-  .benefits_item-ttl {
-    font-size: clamp(8px, 5vw, 2.3em);
   }
 
   .benefits_item-desc {
@@ -424,7 +457,7 @@
 
 @media (max-width: 991px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
@@ -436,7 +469,10 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .solutions-list {
-    gap: clamp(5px, 1.1vw, 2em);
+    gap: clamp(5px, 1vw, 1em);
+  }
+  .solution-icon{
+    padding: clamp(3px,1.5vw, 12px);
   }
 
   .arrow-pointer {
@@ -455,10 +491,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .step-item p {
-    font-size: clamp(10px, 1.4vw, 1.5em);
-  }
-
   .step-item-img {
     width: clamp(10px, 1.8vw, 2em);
     height: clamp(10px, 1.8vw, 2em);
@@ -466,10 +498,6 @@
 
   .solutions-steps {
     padding: 1em;
-  }
-
-  .steps-title {
-    font-size: clamp(13px, 1.6vw, 2.2em);
   }
 
   .benefits_item-ttl {

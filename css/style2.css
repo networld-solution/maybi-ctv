@@ -13,7 +13,7 @@
 .section {
   font-size: 1rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 4em auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,13 +21,14 @@
 }
 
 /* section 1 */
-.maybi-about > h2 {
-  font-size: clamp(9px, 2vw, 3.2em);
+.about-title {
+  font-size: clamp(9px, 2.8vw, 4em);
   color: var(--red);
+  padding: 1em;
 }
 
-.about-title {
-  padding: clamp(10px, 2.6vw, 50px);
+.about-title > br{
+  display: none;
 }
 
 .about-round {
@@ -54,8 +55,8 @@
 }
 
 .box-thumb {
-  width: clamp(10px, 3.2vw, 6em);
-  height: clamp(10px, 3.2vw, 6em);
+  width: clamp(10px, 3.2vw, 4.5em);
+  height: clamp(10px, 3.2vw, 4.5em);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,8 +76,8 @@
   gap: clamp(2px, 0.4vw, 5px);
 }
 
-.box-info h4 {
-  font-size: clamp(8px, 2vw, 3.2em);
+.box-info > h4 {
+  font-size: clamp(8px, 2vw, 3em);
   color: var(--red);
   font-weight: 700;
   margin: 0;
@@ -97,17 +98,6 @@
   gap: clamp(5px, 1.4vw, 2em);
 }
 
-/* .maybi-solution::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  right: -50%;
-  width: 100vw;
-   transform: translateX(-50%);
-  height: 2px;
-  background-color: #f5f4f3;
-} */
 
 .solution {
   display: flex;
@@ -138,13 +128,19 @@
 }
 
 .solution > h2 {
-  font-size: clamp(11px, 1.5vw, 2.2em);
+  font-size: clamp(9px, 2vw, 3.2em);
   color: var(--red);
 }
 
 .solution h3 {
   font-size: clamp(9px, 1.6vw, 2.4em);
   color: var(--red);
+  background: #EDDD53;
+  background: linear-gradient(90deg,rgba(237, 221, 83, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  margin-left: -10px;
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .problem-item p {
@@ -204,22 +200,23 @@
 .solutions-content > h2 {
   font-size: clamp(9px, 2vw, 3.2em);
   color: var(--red);
-  padding: 2rem;
+  padding: 2rem 2rem 0.5rem 2rem; 
 }
 
 .solutions-content > h3 {
   font-size: clamp(5px, 1.4vw, 2em);
   color: var(--red);
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  font-weight: 500;
 }
 
 .solutions-list {
+  font-size: 1rem;
   display: flex;
   flex-wrap: nowrap;
   background-color: var(--bg-pink);
-  padding: 1em;
-  padding-bottom: 1em;
-  overflow-x: auto;
+  padding: 3em 0;
+  margin-bottom: 3em;
 }
 
 .solution-item {
@@ -255,7 +252,7 @@
   border-radius: 50%;
   width: clamp(30px, 4vw, 8em);
   height: clamp(30px, 4vw, 8em);
-  padding: 1em;
+  padding: 1.6em;
   margin-bottom: 1em;
   color: var(--red, #a42624);
   background-color: transparent;
@@ -263,10 +260,6 @@
 }
 
 .solution-icon > svg {
-  /* width: 2em;
-  height: 2em;
-  stroke-width: 1.5; */
-
   width: 100%;
   height: 100%;
 }
@@ -280,9 +273,10 @@
 }
 
 .solution-text {
-  font-size: clamp(9px, 1.2vw, 2em);
+  font-size: clamp(9px, 0.8vw, 1.6em);
   color: var(--black);
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .solutions-steps {
@@ -328,7 +322,7 @@
 }
 
 .benefit-title {
-  font-size: clamp(9px, 2vw, 3.2em);
+  font-size: clamp(9px, 2.8vw, 4em);
   color: var(--red);
   padding: clamp(10px, 2.6vw, 50px);
 }
@@ -342,17 +336,18 @@
   border: 1px solid rgba(227, 223, 217);
   border-radius: 1em;
   background-color: var(--bg-list);
-  padding: 2em;
+  padding: 2em 1em;
 }
 
 .benefits_item-ttl {
   font-size: clamp(12px, 1.1vw, 2.4em);
-  color: var(--red);
+  color: var(--red); 
 }
 
 .benefits_item-desc {
-  font-size: clamp(5px, 1vw, 2em);
+  font-size: clamp(6px, 0.8vw, 1.6em);
   color: var(--black);
+  font-weight: 400;
 }
 
 .benefits_item-hd {
@@ -376,7 +371,7 @@
 
 /* categories */
 .maybi-categories {
-  margin-top: 3em;
+  padding: 2em 0;
 }
 
 .categories {
@@ -389,7 +384,7 @@
 .categories_info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
 }
 
@@ -422,11 +417,11 @@
 .benefits_item-bd {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 5px;
 }
 
 .categories_name {
-  font-size: clamp(14px, 1.4vw, 2em);
+  font-size: clamp(12px, 1.4vw, 2em);
   font-weight: bold;
 }
 
