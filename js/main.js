@@ -34,9 +34,8 @@ const AppMain = (function(){
 
             console.log(data);
 
-            const response = await requestRegister(data,"maybi");
+            const response = await requestRegister(data, "maybi");
 
-            alert("Đăng ký thành công");
             if (response && response.result === "success") {
                 alert("Đăng ký thành công");
                 frmSubmit.reset();
@@ -44,8 +43,6 @@ const AppMain = (function(){
                 console.error("Lỗi từ Google Script:", response);
                 alert("Đăng ký thất bại, vui lòng thử lại.");
             }
-
-            frmSubmit.reset();
 
         } catch (err) {
             console.error(err);
@@ -68,14 +65,19 @@ async function requestRegister(dataForm, type) {
     "AKfycbzval6fduwlaIyHy36yeMFBynV2rtspaIsGnJl9GOy0tHFQQar455fJ7URCFHoqiMJ7";
   const url = `https://script.google.com/macros/s/${Id}/exec`;
 
-  const payload = JSON.stringify(type ? { type, data: dataForm } : dataForm);
+  // Chuẩn bị dữ liệu để gửi đi
+  const formData = new URLSearchParams();
+  formData.append('type', type);
+  for (const key in dataForm) {
+    formData.append(key, dataForm[key]);
+  }
 
   return fetch(url, {
     method: "POST",
     headers: {
-      "Content-Type": "text/plain",
+      "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: payload,
+    body: formData,
   })
     .then((response) => response.json())
     .then((data) => data);
