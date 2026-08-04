@@ -54,7 +54,7 @@
 
   .box {
     width: 47%;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .box-thumb {
@@ -221,6 +221,7 @@
   .policy-header .section-title,
   .register-card .section-title {
     font-size: clamp(12px, 2.7vw, 20px);
+    margin-bottom: 1em;
   }
 
   .register-note {
@@ -328,7 +329,7 @@
     border-left: 1px solid rgba(227, 223, 217);
     padding-left: 4.5em;
   }
-    .support-faq-container {
+  .support-faq-container {
     gap: 4em;
   }
 }
@@ -446,6 +447,8 @@
   .policy-header .section-title,
   .register-card .section-title {
     font-size: clamp(12px, 6vw, 3em);
+    white-space: normal;
+    margin-bottom: 1rem;
   }
 
   .policy-header p {
@@ -456,7 +459,7 @@
   }
 
   .policy-table-head th:nth-child(1) {
-    width: 30%;
+    width: 40%;
   }
 
   .countdown-title {
@@ -516,10 +519,12 @@
   }
 
   .footer-desc {
-    text-align: center;
+    text-align: left;
   }
 
-
+  .about-title > br {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

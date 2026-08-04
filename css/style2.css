@@ -25,18 +25,26 @@
 .section {
   font-size: 1rem;
   width: 90%;
-  margin: 4em auto;
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+.maybi-about,
+.maybi-benefit,
+.maybi-solution,
+.maybi-categories,
+.maybi-commission,
+.maybi-support-faq {
+  margin: 6em auto;
+}
+
 /* section 1 */
 .about-title {
   font-size: clamp(9px, 2.8vw, 4em);
   color: var(--text-red);
-  padding: 1em;
+  padding-bottom: 1em;
 }
 
 .about-title > br {
@@ -338,7 +346,7 @@
 .benefit-title {
   font-size: clamp(9px, 2.8vw, 4em);
   color: var(--text-red);
-  padding: clamp(10px, 2.6vw, 50px);
+  padding-bottom: 1em;
 }
 
 .benefits_item {
@@ -384,10 +392,6 @@
 }
 
 /* categories */
-.maybi-categories {
-  padding: 2em 0;
-}
-
 .categories {
   display: grid;
   grid-template-columns: 3.2fr 6.8fr;
@@ -462,14 +466,10 @@
 }
 
 /* mục đăng ký */
-.maybi-commission {
-  margin-top: 3em;
-}
-
 .policy-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 6em;
   align-items: stretch;
 }
 
@@ -488,15 +488,16 @@
 
 .policy-header .section-title {
   color: var(--text-red);
-  font-size: clamp(12px, 1.8vw, 25px);
+  font-size: clamp(9px, 2vw, 3.2em);
   font-weight: 700;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .register-card .section-title {
+  font-size: clamp(9px, 2vw, 3.2em);
   color: var(--text-red);
-  font-size: clamp(12px, 1.8vw, 25px);
+  white-space: nowrap;
   font-weight: 700;
   text-align: center;
 }
@@ -545,7 +546,7 @@
 }
 
 .policy-table-head th:nth-child(1) {
-  width: 40%;
+  width: 36%;
 }
 
 .policy-table-head th:nth-child(2) {
@@ -648,9 +649,7 @@
 
 /* Support & FAQ Section */
 .maybi-support-faq {
-  border-radius: 20px;
-  padding: 3em 1em 3em 1em;
-  margin-bottom: 2em;
+  border-radius: 2em;
   text-align: left;
 }
 
@@ -663,7 +662,7 @@
 .support-zone .section-title,
 .faq-zone .section-title {
   color: var(--text-red);
-  font-size: clamp(12px, 2.2vw, 2.4em);
+  font-size: clamp(9px, 2vw, 3.2em);
   font-weight: 700;
   margin-bottom: 20px;
   text-align: left;
@@ -762,8 +761,7 @@
 .maybi-countdown-section {
   padding: 0;
   width: 100%;
-  margin-top: -30px;
-  margin-bottom: 30px;
+  margin-top: 6em;
 }
 
 .countdown-banner {
