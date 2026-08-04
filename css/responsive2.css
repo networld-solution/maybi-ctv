@@ -39,18 +39,20 @@
 @media (max-width: 768px) {
   .section {
     width: 100%;
+    margin: 3em auto;
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .about-title {
     font-size: clamp(14px, 4vw, 2.8em);
     padding-left: 0;
     padding-right: 0;
   }
 
-  .about-title > br {
+  /* .about-title > br {
     display: block;
-  }
+  } */
 
   .box {
     width: 47%;
@@ -101,7 +103,7 @@
   }
 
   .solution-number {
-    font-size: clamp(12px, 2.4vw, 1.8em);
+    font-size: clamp(14px, 2.4vw, 1.8em);
   }
 
   .solution-text {
@@ -137,7 +139,7 @@
 
   .solutions-content > h3 {
     font-size: clamp(6px, 4vw, 2em);
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 
   .steps-title {
@@ -176,12 +178,6 @@
     gap: 1.5em;
   }
 
-  .categories_title {
-    flex: 1;
-    padding-bottom: 0;
-    font-size: clamp(20px, 4vw, 4em);
-  }
-
   .categories_list {
     flex: 1;
     border-top: none;
@@ -214,7 +210,7 @@
   }
 
   .policy-footnote {
-    font-size: clamp(12px, 1.9vw, 1.8rem);
+    font-size: clamp(14px, 1.9vw, 1.8rem);
     margin-top: 2em;
   }
 
@@ -235,7 +231,9 @@
   /* QA */
   .maybi-support-faq {
     padding: 1.5em;
+    margin-bottom: 1em;
   }
+
   .support-list {
     grid-template-columns: 1fr;
   }
@@ -250,6 +248,7 @@
   .support-zone .section-title,
   .faq-zone .section-title {
     font-size: clamp(12px, 5.5vw, 2.4em);
+    margin-bottom: 4px;
   }
 
   .support-list li {
@@ -309,12 +308,6 @@
     font-size: clamp(12px, 2.4vw, 1.8rem);
   }
 
-  .categories_info {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5em;
-  }
-
   .categories_title {
     flex: 1;
     padding-bottom: 0;
@@ -331,6 +324,14 @@
   }
   .support-faq-container {
     gap: 4em;
+  }
+
+  .step-item p {
+    font-size: clamp(8px, 2.2vw, 2em);
+  }
+
+  .about-title {
+    font-size: clamp(12px, 4vw, 3em);
   }
 }
 
@@ -349,6 +350,7 @@
 
   .solutions-list {
     gap: 15px;
+    margin-bottom: 0;
   }
 
   .solution-item {
@@ -361,11 +363,11 @@
   }
 
   .solution > h2 {
-    font-size: clamp(12px, 6vw, 3em);
+    font-size: clamp(12px, 5.8vw, 3em);
   }
 
   .solution-text {
-    font-size: clamp(8px, 3vw, 1.6em);
+    font-size: clamp(14px, 3vw, 1.6em);
   }
 
   .solutions-content > h2 {
@@ -395,13 +397,17 @@
   .categories_title {
     padding-left: 0;
     font-size: clamp(13px, 4.6vw, 2.6em);
-    margin-bottom: 1em;
+    margin-bottom: 0;
+  }
+
+  .categories_title img {
+    margin: 0 auto;
   }
 
   .categories_list {
     width: 100%;
     border-left: none;
-    padding-left: 1em;
+    padding-left: 0;
   }
 
   .categories_name {
@@ -424,9 +430,12 @@
   .support-zone .section-title,
   .faq-zone .section-title {
     font-size: clamp(12px, 6vw, 3em);
+    margin-bottom: 0;
   }
 
-  .support-list li {
+  .support-list li,
+  .faq-item summary,
+  .faq-content {
     font-size: clamp(14px, 4.4vw, 2em);
   }
 
@@ -436,8 +445,7 @@
   }
 
   .register-note {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 2em;
   }
 
   .maybi-countdown-section {
@@ -498,7 +506,7 @@
     grid-template-columns: 1fr;
   }
   .benefits_item-ttl {
-    font-size: clamp(12px, 4vw, 2.4em);
+    font-size: clamp(14px, 3vw, 1.6em);
   }
 
   .benefits_item-hd {
@@ -507,7 +515,7 @@
   }
 
   .benefits_item-desc {
-    font-size: clamp(6px, 3vw, 1.6em);
+    font-size: clamp(12px, 3vw, 1.6em);
   }
 
   .register-note {
@@ -515,15 +523,27 @@
   }
 
   .footer-logo {
-    margin: auto;
+    width: 70%;
   }
 
   .footer-desc {
-    text-align: left;
+    font-size: clamp(12px, 4vw, 2.4em);
   }
 
   .about-title > br {
+    display: block;
+  }
+
+  .solutions-steps {
     display: none;
+  }
+
+  .policy-layout {
+    gap: 3em;
+  }
+
+  .policy-footnote {
+    margin-top: 0;
   }
 }
 
@@ -546,11 +566,15 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .solution > h2 {
+    padding-top: 0;
+  }
+
   .solutions-list {
     gap: clamp(5px, 1vw, 1em);
   }
   .solution-icon {
-    padding: clamp(3px, 1.5vw, 12px);
+    padding: clamp(3px, 1.5vw, 10px);
   }
 
   .arrow-pointer {
@@ -583,12 +607,12 @@
   }
 
   .benefits_item-desc {
-    font-size: clamp(10px, 1.4vw, 1.6em);
+    font-size: clamp(8px, 1.9vw, 1.8em);
   }
 
   .register-note {
     font-size: clamp(12px, 2vw, 1.8rem);
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 1em;
   }
 
@@ -598,6 +622,14 @@
 
   .categories_title {
     padding-bottom: 0.5em;
+  }
+
+  .policy-header p {
+    font-size: clamp(10px, 1.7vw, 1.7em);
+  }
+
+  .maybi-support-faq {
+    margin-bottom: 4em;
   }
 }
 

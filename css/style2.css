@@ -36,6 +36,7 @@
 .maybi-solution,
 .maybi-categories,
 .maybi-commission,
+.maybi-commission,
 .maybi-support-faq {
   margin: 6em auto;
 }
@@ -56,7 +57,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: clamp(10px, 2.6vw, 50px);
   gap: clamp(12px, 2.4vw, 3em);
 }
 
@@ -71,7 +71,7 @@
   display: flex;
   align-items: center;
   text-align: left;
-  gap: clamp(2px, 0.6vw, 1em);
+  gap: clamp(2px, 1vw, 1em);
 }
 
 .box-thumb {
@@ -80,7 +80,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #444;
 }
 
 .box-thumb-img {
@@ -115,19 +114,19 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
-  gap: clamp(5px, 1.4vw, 2em);
+  gap: 2em;
 }
 
 .solution {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background-color: var(--bg-pink);
   padding: 1em;
   position: relative;
   height: 100%;
-  gap: clamp(5px, 1.1vw, 2em);
+  gap: 2.6em;
 }
 
 .solution::before {
@@ -147,8 +146,10 @@
 }
 
 .solution > h2 {
-  font-size: clamp(9px, 2vw, 3.2em);
+  font-size: clamp(9px, 2.8vw, 4em);
   color: var(--text-red);
+  margin-top: 0;
+  padding-top: 2rem;
 }
 
 .solution h3 {
@@ -160,14 +161,14 @@
     rgba(237, 221, 83, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  margin-left: -10px;
+  margin-left: -8px;
   padding-left: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
 .problem-item p {
-  font-size: clamp(9px, 1.2vw, 1.8em);
+  font-size: clamp(10px, 1.3vw, 1.8em);
 }
 
 .problem-list {
@@ -220,13 +221,13 @@
 }
 
 .solutions-content > h2 {
-  font-size: clamp(9px, 2vw, 3.2em);
+  font-size: clamp(9px, 2.8vw, 4em);
   color: var(--text-red);
-  padding: 2rem 2rem 0.5rem 2rem;
+  padding-top: 10px;
 }
 
 .solutions-content > h3 {
-  font-size: clamp(5px, 1.4vw, 2em);
+  font-size: clamp(14px, 2.2vw, 3em);
   color: var(--text-red);
   padding-bottom: 3rem;
   font-weight: 500;
@@ -287,7 +288,7 @@
 }
 
 .solution-number {
-  font-size: 1.3rem;
+  font-size: clamp(10px, 1.4vw, 2em);
   font-weight: bold;
   color: var(--text-red, #a42624);
   margin-bottom: 0.4em;
@@ -295,10 +296,8 @@
 }
 
 .solution-text {
-  font-size: clamp(9px, 0.8vw, 1.6em);
+  font-size: clamp(10px, 1.3vw, 1.8em);
   color: var(--black);
-  line-height: 1.4;
-  font-weight: 500;
 }
 
 .solutions-steps {
@@ -309,7 +308,7 @@
   background-color: #fbefdc;
   border-radius: 1em;
   border: 1px solid #f7deb6;
-  padding: clamp(5px, 1.1vw, 2em);
+  padding: 1em;
   margin: 0 auto;
 }
 
@@ -352,7 +351,7 @@
 .benefits_item {
   font-size: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   gap: 1em;
   border: 1px solid rgba(227, 223, 217);
@@ -362,12 +361,12 @@
 }
 
 .benefits_item-ttl {
-  font-size: clamp(12px, 1.1vw, 2.4em);
+  font-size: clamp(10px, 1.4vw, 2em);
   color: var(--text-red);
 }
 
 .benefits_item-desc {
-  font-size: clamp(6px, 0.8vw, 1.6em);
+  font-size: clamp(10px, 1.3vw, 1.8em);
   color: var(--black);
   font-weight: 400;
 }
@@ -394,7 +393,7 @@
 /* categories */
 .categories {
   display: grid;
-  grid-template-columns: 3.2fr 6.8fr;
+  grid-template-columns: 3.8fr 6fr;
   align-items: center;
   gap: 2em;
 }
@@ -407,40 +406,63 @@
 }
 
 .categories_title {
-  font-size: clamp(10px, 2.7vw, 4em);
+  font-size: clamp(14px, 2.2vw, 3em);
   text-align: left;
   color: var(--text-red);
+  font-weight: normal;
+}
+
+.categories_title img {
+  padding-bottom: 0.5em;
 }
 
 .categories_list {
   display: flex;
   flex-direction: column;
   border-top: 1px solid rgba(227, 223, 217);
-  padding-top: 1.5em;
-  gap: 2em;
+  padding-top: 0.5em;
+  gap: 1.5em;
 }
 
 .categories_card {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
 }
 
-.categories_icon {
-  width: 3em;
-  height: 3em;
+.categories-thumb {
+  width: 4em;
+  height: 4em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories-thumb_img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+}
+
+.categories_item:nth-child(1) .categories-thumb_img {
+  width: 70%;
+  height: 70%;
+}
+
+.categories-logo {
+  width: clamp(100px, 12vw, 250px);
+  display: block;
 }
 
 .benefits_item-bd {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.5em;
 }
 
 .categories_name {
-  font-size: clamp(12px, 1.4vw, 2em);
-  font-weight: bold;
+  font-size: clamp(8px, 1.6vw, 2.2em);
 }
 
 .categories_gallery {
@@ -451,9 +473,15 @@
 }
 
 .categories_thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.categories_thumb_img {
   flex: 1;
-  width: 0;
   aspect-ratio: 9 / 16;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 1em;
 }
@@ -474,7 +502,11 @@
 }
 
 .policy-card {
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3em;
+  padding: 3em;
   border: 1px solid rgba(227, 223, 217);
   border-radius: 1em;
   background: var(--bg-list);
@@ -483,19 +515,19 @@
 
 .policy-header {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .policy-header .section-title {
   color: var(--text-red);
-  font-size: clamp(9px, 2vw, 3.2em);
+  font-size: clamp(9px, 2.8vw, 4em);
   font-weight: 700;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .register-card .section-title {
-  font-size: clamp(9px, 2vw, 3.2em);
+  font-size: clamp(9px, 2.8vw, 4em);
+
   color: var(--text-red);
   white-space: nowrap;
   font-weight: 700;
@@ -505,21 +537,18 @@
 .register-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 4em;
+  justify-content: flex-start;
+  gap: 3em;
 }
 
 .policy-header p {
-  font-weight: 400;
   font-size: clamp(10px, 1.2vw, 1.8em);
-  margin-top: 0.5em;
+  font-weight: 400;
   color: var(--text-red);
 }
 
 .policy-table-wrapper {
-  overflow-x: auto;
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 1.6em;
 }
 
@@ -591,27 +620,28 @@
 .policy-footnote {
   font-size: clamp(12px, 2vw, 1.8rem);
   color: var(--black);
-  margin-top: 1.2em;
+  margin-top: auto;
 }
 
 /* Register Form */
 .register-form {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 
 .form-row {
   display: flex;
-  gap: 2em;
+  gap: 3em;
 }
 
 .form-input {
+  font-size: clamp(12px, 1.4vw, 1.8rem);
   flex: 1;
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
-  padding: 14px 16px;
+  padding: 20px 25px;
   border: 1px solid #ddd;
   border-radius: 1em;
   outline: none;
@@ -629,7 +659,7 @@
   border: none;
   border-radius: 8px;
   padding: 16px;
-  font-size: clamp(12px, 1.6vw, 1.6rem);
+  font-size: clamp(12px, 2.1vw, 3em);
   font-weight: 700;
   cursor: pointer;
   margin-top: 8px;
@@ -641,10 +671,9 @@
 
 .register-note {
   text-align: center;
-  /* font-size: clamp(12px, 1.3vw, 1.8rem); */
   font-size: clamp(12px, 1.2vw, 1.7rem);
   color: var(--black);
-  padding-bottom: 3em;
+  /* margin-top: auto; */
 }
 
 /* Support & FAQ Section */
@@ -700,7 +729,11 @@
 
 .faq-item {
   border-bottom: 1px solid #ddd;
-  padding: 15px 0 20px 0;
+  padding: 1.5em 0 2em 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
 }
 
 .faq-item summary {
@@ -751,7 +784,7 @@
 
 .faq-content {
   padding-top: 10px;
-  font-size: clamp(10px, 1.2vw, 1.8em);
+  font-size: clamp(10px, 1.5vw, 1.8em);
   color: var(--black);
   line-height: 1.5;
   font-weight: 300;
@@ -885,6 +918,10 @@
   font-weight: bold;
 }
 
+.maybi-support-faq {
+  margin: 4em auto;
+}
+
 /* footer */
 .maybi-footer {
   width: 100%;
@@ -900,7 +937,6 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  height: 40%;
   margin-bottom: 1em;
 }
 
@@ -997,7 +1033,7 @@
 }
 
 .hotline-number {
-  font-size: clamp(12px, 2.8vw, 2.2em);
+  font-size: clamp(16px, 2.2vw, 3em);
   font-weight: 700;
   color: var(--text-red);
   transform: translateY(-10%);
