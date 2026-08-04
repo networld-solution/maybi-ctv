@@ -508,6 +508,16 @@
   .register-note {
     font-size: clamp(10px, 3.5vw, 1.4rem);
   }
+
+  .footer-logo {
+    margin: auto;
+  }
+
+  .footer-desc {    
+    text-align: center;
+  }
+
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

@@ -748,8 +748,7 @@
 
 .countdown-banner {
   background: linear-gradient(90deg, #d32f2f 0%, #e53935 100%);
-  border-radius: 16px;
-  padding: 20px 40px;
+  padding: 20px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -874,6 +873,8 @@
   display: grid;
   grid-template-columns: 4fr 2fr 3fr;
   gap: 4em;
+  background-color: var(--bg-list);
+  margin-bottom: 0;
 }
 
 .footer-about {
