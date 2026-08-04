@@ -36,6 +36,7 @@ const AppMain = (function(){
 
             const response = await requestRegister(data,"maybi");
 
+            alert("Đăng ký thành công");
             if (response && response.result === "success") {
                 alert("Đăng ký thành công");
                 frmSubmit.reset();
@@ -43,6 +44,8 @@ const AppMain = (function(){
                 console.error("Lỗi từ Google Script:", response);
                 alert("Đăng ký thất bại, vui lòng thử lại.");
             }
+
+            frmSubmit.reset();
 
         } catch (err) {
             console.error(err);
@@ -69,6 +72,9 @@ async function requestRegister(dataForm, type) {
 
   return fetch(url, {
     method: "POST",
+    headers: {
+      "Content-Type": "text/plain",
+    },
     body: payload,
     // Google Apps Script sẽ tự động parse body nếu không có Content-Type header
   })
