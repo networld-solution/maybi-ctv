@@ -57,19 +57,21 @@ const AppMain = (function(){
 
 
 async function requestRegister(dataForm, type) {
-    const Id =
-        "AKfycbw9TgRdHzCVF31X1bg4ogwyofKxK0fZ6ClamIJTwYtAopQ3vbFOEwKDI3Kf--xJ9-J2";
-    return fetch(`https://script.google.com/macros/s/${Id}/exec`, {
-        method: "POST",
-        redirect: "follow",
-        body: JSON.stringify(type ? { type, data: dataForm } : dataForm),
-    })
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            return data;
-        });
+  const Id =
+    "AKfycbzval6fduwlaIyHy36yeMFBynV2rtspaIsGnJl9GOy0tHFQQar455fJ7URCFHoqiMJ7";
+  const url = `https://script.google.com/macros/s/${Id}/exec`;
+
+  const payload = JSON.stringify(type ? { type, data: dataForm } : dataForm);
+
+  return fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "text/plain",
+    },
+    body: payload,
+  })
+    .then((response) => response.json())
+    .then((data) => data);
 }
 
 function formatDateTime(date = new Date()) {
