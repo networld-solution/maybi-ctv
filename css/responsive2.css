@@ -37,18 +37,18 @@
 }
 
 @media (max-width: 768px) {
-  .section{
+  .section {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .about-title  {
+  .about-title {
     font-size: clamp(14px, 4vw, 2.8em);
     padding-left: 0;
     padding-right: 0;
   }
 
-  .about-title > br{
+  .about-title > br {
     display: block;
   }
 
@@ -153,14 +153,13 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .benefits_item{
-    padding:2em;
+  .benefits_item {
+    padding: 2em;
   }
 
   .benefits_item-ttl {
     font-size: clamp(12px, 2.6vw, 2.4em);
   }
-
 
   /* Mục Categories */
   .categories {
@@ -327,7 +326,10 @@
     border-top: none;
     padding-top: 0;
     border-left: 1px solid rgba(227, 223, 217);
-    padding-left: 1.5em;
+    padding-left: 4.5em;
+  }
+    .support-faq-container {
+    gap: 4em;
   }
 }
 
@@ -338,7 +340,6 @@
     padding-right: 0;
     padding-top: 0;
   }
-
 
   .solution {
     width: 100%;
@@ -382,22 +383,24 @@
     font-size: clamp(8px, 1.4vw, 2em);
   }
 
-  .categories {    
+  .categories {
     gap: 2.5em;
   }
 
-  .categories_info{
+  .categories_info {
     flex-direction: column;
   }
 
-  .categories_title{
+  .categories_title {
     padding-left: 0;
     font-size: clamp(13px, 4.6vw, 2.6em);
     margin-bottom: 1em;
   }
 
-  .categories_list{
+  .categories_list {
     width: 100%;
+    border-left: none;
+    padding-left: 1em;
   }
 
   .categories_name {
@@ -408,7 +411,7 @@
     font-size: clamp(12px, 6vw, 3em);
   }
 
-  .policy-card{
+  .policy-card {
     height: auto;
   }
 
@@ -417,7 +420,8 @@
     grid-auto-rows: auto;
   }
 
-  .support-zone .section-title, .faq-zone .section-title {
+  .support-zone .section-title,
+  .faq-zone .section-title {
     font-size: clamp(12px, 6vw, 3em);
   }
 
@@ -425,9 +429,9 @@
     font-size: clamp(14px, 4.4vw, 2em);
   }
 
-  .register-card {    
+  .register-card {
     justify-content: center;
-    gap:1em;
+    gap: 1em;
   }
 
   .register-note {
@@ -435,12 +439,12 @@
     padding-bottom: 1em;
   }
 
-  .maybi-countdown-section{
+  .maybi-countdown-section {
     margin-top: 0;
   }
 
-
-  .policy-header .section-title, .register-card .section-title {
+  .policy-header .section-title,
+  .register-card .section-title {
     font-size: clamp(12px, 6vw, 3em);
   }
 
@@ -451,10 +455,8 @@
     font-weight: 400;
   }
 
-
-
   .policy-table-head th:nth-child(1) {
-    width: 60%;
+    width: 30%;
   }
 
   .countdown-title {
@@ -513,7 +515,7 @@
     margin: auto;
   }
 
-  .footer-desc {    
+  .footer-desc {
     text-align: center;
   }
 
@@ -542,8 +544,8 @@
   .solutions-list {
     gap: clamp(5px, 1vw, 1em);
   }
-  .solution-icon{
-    padding: clamp(3px,1.5vw, 12px);
+  .solution-icon {
+    padding: clamp(3px, 1.5vw, 12px);
   }
 
   .arrow-pointer {
@@ -581,7 +583,16 @@
 
   .register-note {
     font-size: clamp(12px, 2vw, 1.8rem);
-    padding-bottom: 3em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+
+  .categories_list {
+    padding-top: 1.5em;
+  }
+
+  .categories_title {
+    padding-bottom: 0.5em;
   }
 }
 

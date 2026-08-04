@@ -123,9 +123,16 @@
             </symbol>
 
             <!-- Check icon -->
-            <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
                 stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12" />
+            </symbol>
+
+            <!-- Check Circle icon -->
+            <symbol id="icon-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
             </symbol>
 
             <!-- Bước 1: Đăng ký trở thành CTV MAYBI -->
@@ -192,9 +199,11 @@
         </defs>
     </svg>
 
-    <header>
+    <header class="banner-header">
+        <img src="./public/images/logo-banner.jpg" alt="Logo Maybi" class="banner-logo">
         <a class="banner-pointer"
-            href="https://maybi.com/?utm_source=ctv&utm_medium=landing_page_banner&utm_campaign=banhangvon0d">
+            href="https://maybi.com/?utm_source=ctv&utm_medium=landing_page_banner&utm_campaign=banhangvon0d"
+            target="_blank">
             <img class="img banner-pointer_thumb" src="./public/images/banner_16x9.jpg" alt="thumb_banner">
         </a>
     </header>
@@ -224,8 +233,8 @@
                     <h5>Cộng tác viên</h5>
                 </div>
             </div>
-            
-            <div class="box-divider"></div>       
+
+            <div class="box-divider"></div>
 
             <div class="box">
                 <div class="box-thumb">
@@ -265,7 +274,7 @@
                             <use href="#icon-cancel"></use>
                         </svg>
                     </div>
-                    <p >Muốn bán hàng nhưng không có vốn</p>
+                    <p>Muốn bán hàng nhưng không có vốn</p>
                 </li>
                 <li class="problem-item">
                     <div class="problem-icon">
@@ -301,7 +310,7 @@
                 </li>
             </ul>
             <div class="problem-conclusion">
-                <h3>Maybi giúp bạn <br> giải quyết tất cả những điều đó!</h3>
+                <h3>MAYBI giúp bạn <br> giải quyết tất cả những điều đó!</h3>
                 <svg class="arrow-pointer">
                     <use href="#icon-curved-arrow"></use>
                 </svg>
@@ -309,8 +318,8 @@
         </div>
         <div class="solutions">
             <div class="solutions-content">
-                <h2>Giải pháp từ Maybi</h2>
-                <h3>Bạn bán hàng - Maybi lo phần còn lại</h3>
+                <h2>Giải pháp từ MAYBI</h2>
+                <h3>Bạn bán hàng - MAYBI lo phần còn lại</h3>
                 <div class="solutions-list">
                     <!-- Step 1 -->
                     <div class="solution-item">
@@ -343,14 +352,14 @@
                             </svg></div>
                         <div class="solution-number">04</div>
                         <div class="solution-text">Đăng bài bán hàng</div>
-                    </div>                   
+                    </div>
                     <!-- Step 6 -->
                     <div class="solution-item ">
                         <div class="solution-icon"><svg>
                                 <use href="#icon-truck"></use>
                             </svg></div>
                         <div class="solution-number">05</div>
-                        <div class="solution-text">Maybi xử lý đơn hàng</div>
+                        <div class="solution-text">MAYBI xử lý đơn hàng</div>
                     </div>
                     <!-- Step 7 -->
                     <div class="solution-item ">
@@ -387,7 +396,7 @@
     </section>
     <!-- vì sao chọn maybi -->
     <section class="section maybi-benefit">
-        <h1 class="benefit-title">Vì sao nên tham gia cùng Maybi?</h1>
+        <h1 class="benefit-title">Vì sao nên tham gia cùng MAYBI?</h1>
         <div class="benefit-list">
             <!-- 1st item -->
             <div class="benefits_item">
@@ -410,7 +419,7 @@
                 </div>
                 <div class="benefits_item-bd">
                     <h3 class="benefits_item-ttl">THU NHẬP ỔN ĐỊNH</h3>
-                    <h4 class="benefits_item-desc">Thu nhập đến 26 triệu đồng / tháng*</h4>
+                    <h4 class="benefits_item-desc">Thu nhập đến 26 triệu đồng / tháng</h4>
                 </div>
             </div>
             <!-- 3rd item -->
@@ -422,7 +431,7 @@
                 </div>
                 <div class="benefits_item-bd">
                     <h3 class="benefits_item-ttl">KHÔNG LO NHẬP HÀNG</h3>
-                    <h4 class="benefits_item-desc">Maybi lo kho, đóng gói và giao hàng cho người tiêu dùng</h4>
+                    <h4 class="benefits_item-desc">MAYBI lo kho, đóng gói và giao hàng cho người tiêu dùng</h4>
                 </div>
             </div>
             <!-- 4th item -->
@@ -434,7 +443,8 @@
                 </div>
                 <div class="benefits_item-bd">
                     <h3 class="benefits_item-ttl">CHỦ ĐỘNG THỜI GIAN</h3>
-                    <h4 class="benefits_item-desc">Không cần đến công ty, bạn chủ động thời gian, địa điểm, kênh bán hàng và mục tiêu thu nhập.</h4>
+                    <h4 class="benefits_item-desc">Không cần đến công ty, bạn chủ động thời gian, địa điểm, kênh bán
+                        hàng và mục tiêu thu nhập.</h4>
                 </div>
             </div>
         </div>
@@ -481,7 +491,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="section maybi-commission">
         <div class="policy-layout">
             <div class="policy-zone-left">
@@ -653,29 +663,29 @@
                 <div class="faq-list">
                     <details class="faq-item">
                         <summary>Có mất phí để trợ thành CTV không?</summary>
-                        <div class="faq-content">Không. Chương trình Cộng tác viên Maybi hoàn toàn miễn phí. Bạn không
+                        <div class="faq-content">Không. Chương trình Cộng tác viên MAYBI hoàn toàn miễn phí. Bạn không
                             cần đóng bất kỳ khoản phí đăng ký hay phí duy trì nào để bắt đầu.</div>
                     </details>
                     <details class="faq-item">
                         <summary>Có cần nhập hàng không?</summary>
-                        <div class="faq-content">Không. Bạn không cần nhập hàng hay ôm tồn kho. Maybi sẽ chịu trách
+                        <div class="faq-content">Không. Bạn không cần nhập hàng hay ôm tồn kho. MAYBI sẽ chịu trách
                             nhiệm quản lý sản phẩm, đóng gói, giao hàng và chăm sóc sau bán hàng.</div>
                     </details>
                     <details class="faq-item">
                         <summary>Bao lâu thì nhận được hoa hồng?</summary>
-                        <div class="faq-content">Hoa hồng sẽ được đối soát và thanh toán theo chính sách của Maybi sau
+                        <div class="faq-content">Hoa hồng sẽ được đối soát và thanh toán theo chính sách của MAYBI sau
                             khi đơn hàng được giao thành công và hoàn tất thời gian đối soát.</div>
                     </details>
                     <details class="faq-item">
                         <summary>Không biết bán hàng có làm được không?</summary>
-                        <div class="faq-content">Hoàn toàn được. Dù bạn chưa từng bán hàng online, Maybi sẽ cung cấp
+                        <div class="faq-content">Hoàn toàn được. Dù bạn chưa từng bán hàng online, MAYBI sẽ cung cấp
                             hình ảnh, video, nội dung mẫu và hướng dẫn từng bước để bạn dễ dàng bắt đầu. Đội ngũ hỗ trợ
                             luôn sẵn sàng đồng hành trong quá trình bán hàng.</div>
                     </details>
                     <details class="faq-item">
                         <summary>Có được bán hàng ở Facebook / TikTok không?</summary>
                         <div class="faq-content">Có. Bạn có thể chủ động bán hàng trên Facebook, TikTok, Zalo, Instagram
-                            hoặc các kênh online khác. Maybi khuyến khích bạn tận dụng nền tảng phù hợp để tiếp cận
+                            hoặc các kênh online khác. MAYBI khuyến khích bạn tận dụng nền tảng phù hợp để tiếp cận
                             nhiều khách hàng hơn.</div>
                     </details>
                 </div>
@@ -683,19 +693,22 @@
         </div>
     </section>
 
-    
+
 
 
 
     <!-- footer -->
     <footer class="section maybi-footer">
-        <div class="footer-about">
-            <img src="https://maybi.vn/static/images/logo.webp" alt="Maybi" class="footer-logo">
+        <div>
+            <div class="footer-thumb">
+                <img src="./public/images/LOGO_BLACK@300x-8.png" alt="Maybi" class="footer-logo">
+            </div>
             <p class="footer-desc">Thương hiệu thời trang nữ thanh lịch dành cho phụ nữ hiện đại ra đời từ 2016.</p>
         </div>
 
+
         <div class="footer-connect">
-            <h4 class="footer-title">Kết nối với Maybi</h4>
+            <h4 class="footer-title">Kết nối với MAYBI</h4>
             <ul class="footer-social">
                 <li><a href="https://www.facebook.com/maybi.official" target="_blank" class="social-link"><img
                             src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="Facebook"
