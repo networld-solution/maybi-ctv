@@ -332,6 +332,14 @@
 }
 
 @media (max-width: 575px) {
+  .about-title {
+    font-size: clamp(12px, 6vw, 3em);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+
   .solution {
     width: 100%;
     gap: 1.5em;
@@ -351,7 +359,7 @@
   }
 
   .solution > h2 {
-    font-size: clamp(12px, 4.7vw, 2.1em);
+    font-size: clamp(12px, 6vw, 3em);
   }
 
   .solution-text {
@@ -374,14 +382,18 @@
     font-size: clamp(8px, 1.4vw, 2em);
   }
 
+  .categories {    
+    gap: 2.5em;
+  }
+
   .categories_info{
     flex-direction: column;
   }
 
   .categories_title{
     padding-left: 0;
-    margin-bottom: 1em;
     font-size: clamp(13px, 4.6vw, 2.6em);
+    margin-bottom: 1em;
   }
 
   .categories_list{
@@ -391,6 +403,55 @@
   .categories_name {
     font-size: clamp(12px, 4vw, 1.8rem);
   }
+
+  .benefit-title {
+    font-size: clamp(12px, 6vw, 3em);
+  }
+
+  .policy-card{
+    height: auto;
+  }
+
+  .policy-layout {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .support-zone .section-title, .faq-zone .section-title {
+    font-size: clamp(12px, 6vw, 3em);
+  }
+
+  .support-list li {
+    font-size: clamp(14px, 4.4vw, 2em);
+  }
+
+  .register-card {    
+    justify-content: center;
+    gap:1em;
+  }
+
+  .register-note {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .maybi-countdown-section{
+    margin-top: 0;
+  }
+
+
+  .policy-header .section-title, .register-card .section-title {
+    font-size: clamp(12px, 6vw, 3em);
+  }
+
+  .policy-header p {
+    font-size: clamp(6px, 4vw, 2em);
+  }
+  .categories_name {
+    font-weight: 400;
+  }
+
+
 
   .policy-table-head th:nth-child(1) {
     width: 60%;
