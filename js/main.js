@@ -34,7 +34,7 @@ const AppMain = (function(){
 
             console.log(data);
 
-            await requestRegister(data);
+            await requestRegister(data,"maybi");
 
             alert("Đăng ký thành công");
 
@@ -55,22 +55,23 @@ const AppMain = (function(){
     }
 })();
 
-async function requestRegister(data) {
-    const formData = new FormData();
-    Object.keys(data).forEach((key) => {
-        formData.append(key, data[key]);
-    });
 
-    const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbw9TgRdHzCVF31X1bg4ogwyofKxK0fZ6ClamIJTwYtAopQ3vbFOEwKDI3Kf--xJ9-J2/exec",
-        {
-            method: "POST",           
-            body: formData,
-        }
-    );
-
-    return response;
+async function requestRegister(dataForm, type) {
+    const Id =
+        "AKfycbw9TgRdHzCVF31X1bg4ogwyofKxK0fZ6ClamIJTwYtAopQ3vbFOEwKDI3Kf--xJ9-J2";
+    return fetch(`https://script.google.com/macros/s/${Id}/exec`, {
+        method: "POST",
+        redirect: "follow",
+        body: JSON.stringify(type ? { type, data: dataForm } : dataForm),
+    })
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            return data;
+        });
 }
+
 function formatDateTime(date = new Date()) {
     const pad = (n) => String(n).padStart(2, "0");
 
