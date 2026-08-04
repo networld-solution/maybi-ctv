@@ -76,7 +76,6 @@ async function requestRegister(dataForm, type) {
       "Content-Type": "text/plain",
     },
     body: payload,
-    // Google Apps Script sẽ tự động parse body nếu không có Content-Type header
   })
     .then((response) => response.json())
     .then((data) => data);
