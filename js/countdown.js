@@ -1,11 +1,14 @@
-// Ngày kết thúc: Năm, Tháng (Tháng 1 = 0, Tháng 8 = 7), Ngày, Giờ, Phút, Giây
-const TARGET_DATE = new Date(new Date().getFullYear(), 7, 11, 23, 59, 59).getTime();
+function getEndOfMonth() {
+    const now = new Date();
+    return new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59).getTime();
+}
 
 function initCountdown() {
     function updateCountdown() {
         function calculateAndUpdate() {
             const now = new Date().getTime();
-            const timeDifference = TARGET_DATE - now;
+            const targetDate = getEndOfMonth();
+            const timeDifference = targetDate - now;
 
             let days = 0, hours = 0, minutes = 0, seconds = 0;
 
