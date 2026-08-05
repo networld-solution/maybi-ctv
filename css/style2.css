@@ -273,8 +273,8 @@
   justify-content: center;
   border: 1px solid var(--text-red, #a42624);
   border-radius: 50%;
-  width: clamp(30px, 4vw, 8em);
-  height: clamp(30px, 4vw, 8em);
+  width: clamp(30px, 5vw, 8em);
+  height: clamp(30px, 5vw, 8em);
   padding: 1.6em;
   margin-bottom: 1em;
   color: var(--text-red, #a42624);
