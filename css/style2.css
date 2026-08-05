@@ -1037,3 +1037,81 @@
   font-size: clamp(10px, 1.8vw, 1.8em);
   color: var(--black);
 }
+
+/* 3 btns */
+.nav-buttons {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 8em;
+  right: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  z-index: 10;
+}
+
+.nav-btn {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn--phone,
+.nav-btn--zalo,
+.nav-btn--messenger {
+  background-color: var(--bg-btn-nav);
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+.nav-btn_tooltip {
+  position: absolute;
+  right: 3em;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.nav-btn:hover .nav-btn_tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-btn_pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: inherit;
+  z-index: -1;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
