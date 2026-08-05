@@ -1,5 +1,5 @@
 const AppMain = (function(){
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw9TgRdHzCVF31X1bg4ogwyofKxK0fZ6ClamIJTwYtAopQ3vbFOEwKDI3Kf--xJ9-J2/exec";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx9rB9glPUUKy3IF3lyq9zQnsngikLs9085SECkfZtP8PL2XywvZJeSNbMEMsEWgYQB/exec";
 
     const frmSubmit = document.querySelector("#maybi-registration-form");
     const submitBtn = document.querySelector("#submit-btn");
@@ -62,7 +62,7 @@ const AppMain = (function(){
 
 async function requestRegister(dataForm, type) {
   const Id =
-    "AKfycbyAnBh8SR123oqe2EasquPuM3CyDWdImjfwHICwWLTnYhzoZuJdn2wM_1LEiT7lKQ9vRg";
+    "AKfycbx9rB9glPUUKy3IF3lyq9zQnsngikLs9085SECkfZtP8PL2XywvZJeSNbMEMsEWgYQB";
   const url = `https://script.google.com/macros/s/${Id}/exec`;
 
   // Chuẩn bị dữ liệu để gửi đi
