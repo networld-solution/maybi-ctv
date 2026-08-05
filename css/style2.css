@@ -320,7 +320,7 @@
 }
 
 .step-item p {
-  font-size: clamp(14px, 1.4vw, 2em);
+  font-size: clamp(11px, 1.4vw, 2em);
   color: var(--text-red);
 }
 
@@ -419,7 +419,6 @@
 .categories_list {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(227, 223, 217);
   padding-top: 0.5em;
   gap: 1.5em;
 }
@@ -738,8 +737,8 @@
 
 .faq-item summary {
   cursor: pointer;
-  font-size: clamp(10px, 1.2vw, 1.6em);
-  font-weight: 400;
+  font-size: clamp(14px, 2vw, 2em);
+  font-weight: 500;
   color: var(--black);
   display: flex;
   align-items: center;
@@ -747,11 +746,6 @@
   position: relative;
   padding-right: 3em;
   padding-bottom: 6px;
-}
-
-.faq-item summary {
-  font-size: clamp(14px, 2vw, 2em) !important;
-  font-weight: 500;
 }
 
 .support-faq-container {
@@ -783,8 +777,8 @@
 }
 
 .faq-content {
-  padding-top: 10px;
   font-size: clamp(10px, 1.5vw, 1.8em);
+  padding-top: 10px;
   color: var(--black);
   line-height: 1.5;
   font-weight: 300;

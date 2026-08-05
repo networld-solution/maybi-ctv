@@ -173,17 +173,15 @@
   }
 
   .categories_info {
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
   }
 
   .categories_list {
-    flex: 1;
     border-top: none;
     padding-top: 0;
-    border-left: 1px solid rgba(227, 223, 217);
-    padding-left: 1.5em;
+    padding-left: 3em;
   }
 
   /* mục đăng ký */
@@ -312,16 +310,9 @@
     flex: 1;
     padding-bottom: 0;
     font-size: clamp(20px, 4vw, 4em);
-    padding-left: 1em;
+    padding-left: 16px;
   }
 
-  .categories_list {
-    flex: 1;
-    border-top: none;
-    padding-top: 0;
-    border-left: 1px solid rgba(227, 223, 217);
-    padding-left: 4.5em;
-  }
   .support-faq-container {
     gap: 4em;
   }
@@ -391,13 +382,16 @@
   }
 
   .categories_info {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .categories_title {
     padding-left: 0;
     font-size: clamp(13px, 4.6vw, 2.6em);
     margin-bottom: 0;
+    text-align: center;
   }
 
   .categories_title img {
@@ -444,10 +438,6 @@
     gap: 1em;
   }
 
-  .register-note {
-    padding-top: 2em;
-  }
-
   .maybi-countdown-section {
     margin-top: 0;
   }
@@ -462,6 +452,7 @@
   .policy-header p {
     font-size: clamp(6px, 4vw, 2em);
   }
+
   .categories_name {
     font-weight: 400;
   }
@@ -519,7 +510,8 @@
   }
 
   .register-note {
-    font-size: clamp(10px, 3.5vw, 1.4rem);
+    font-size: clamp(14px, 1.9vw, 1.8rem);
+    padding-top: 2em;
   }
 
   .footer-logo {
@@ -618,10 +610,6 @@
 
   .categories_list {
     padding-top: 1.5em;
-  }
-
-  .categories_title {
-    padding-bottom: 0.5em;
   }
 
   .policy-header p {
