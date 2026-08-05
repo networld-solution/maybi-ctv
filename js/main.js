@@ -62,7 +62,7 @@ const AppMain = (function(){
 
 async function requestRegister(dataForm, type) {
   const Id =
-    "AKfycbzval6fduwlaIyHy36yeMFBynV2rtspaIsGnJl9GOy0tHFQQar455fJ7URCFHoqiMJ7";
+    "AKfycbyAnBh8SR123oqe2EasquPuM3CyDWdImjfwHICwWLTnYhzoZuJdn2wM_1LEiT7lKQ9vRg";
   const url = `https://script.google.com/macros/s/${Id}/exec`;
 
   // Chuẩn bị dữ liệu để gửi đi
