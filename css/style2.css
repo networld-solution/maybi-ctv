@@ -1053,8 +1053,8 @@
 
 .nav-btn {
   position: relative;
-  width: 5.2em;
-  height: 5.2em;
+  width: 6em;
+  height: 6em;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1076,7 +1076,7 @@
 
 .nav-btn_tooltip {
   position: absolute;
-  right: 3.5em;
+  right: 6em;
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
   padding: 6px 12px;
