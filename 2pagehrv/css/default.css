@@ -25,8 +25,9 @@
   --text-green: #1b5b31;
   --text-gray: #364f42;
   --bg-pink: #fef7f1;
-  --bg-red-show: #ff3366;
+  --bg-red-show: #ea3b48;
   --bg-gray: rgba(0, 0, 0, 0.4);
+  --text-gray:#7c6e69;
 }
 
 body {

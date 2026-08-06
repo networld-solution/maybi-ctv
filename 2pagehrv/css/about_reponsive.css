@@ -23,12 +23,40 @@
 
 
 @media (max-width: 992px) {
+    .brand-story {
+        padding: 4em 15px;
+    }
     
+    .brand-story-top {
+        grid-template-columns: 1fr;
+    }
+    
+    .brand-story-image-wrapper {
+        position: relative;
+        top: auto;
+    }
+    
+    .brand-story-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    
+    .brand-story-slogan {
+        white-space: normal;
+    }
+
+       .desktop-br {
+        display: none;
+    }
 }
 
 
 
 @media (max-width: 768px) {
+    .stat-label {
+        white-space: normal;
+    }
+    
     .slider-control {
         display: none;
     }

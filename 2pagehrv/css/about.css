@@ -131,20 +131,112 @@
 }
 
 .stat-icon {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     color: var(--bg-red-show);
 }
 
 .stat-number {
-    font-size: clamp(16px, 1.8vw, 2.2em);
+    font-size: clamp(20px, 1.9vw, 2.6em);
     font-weight: bold;
     color: var(--black);
     margin-top: 0.5em;
 }
 
 .stat-label {
-    font-size: clamp(14px, 1.3vw, 1.8em);
+    font-size: clamp(14px, 1.4vw, 2em);
     color: var(--bg-gray);
     margin-top: 0.25em;
+    white-space: nowrap;
+}
+
+
+/* === BRAND STORY SECTION === */
+.brand-story {
+    padding: 6em 0;
+    background-color: var(--white);
+}
+
+.brand-story-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5em;
+    align-items: start;
+}
+
+.brand-story-subtitle {
+    font-size: clamp(14px, 1.7vw, 2.4em);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--bg-red-show);
+}
+
+.brand-story-title {
+    margin-top: 0.5em;
+    font-size: clamp(20px, 2.1vw, 3em);
+    font-weight: 700;
+    color: var(--bg-red-show);
+    margin-bottom: 1em;
+}
+
+.brand-story-text {
+    margin: 1rem 0 0 0;
+    line-height: 1.8;
+    font-weight: 300;
+    font-size: clamp(14px, 1.3vw, 1.8em);
+    color: var(--text-gray);
+}
+
+.text-red {
+    color: var(--bg-red-show);
+    font-weight: 700;
+}
+
+.brand-story-text b,
+.brand-story-text strong {
+    color: var(--black);
+    font-weight: 700;
+}
+
+.brand-story-image-wrapper {
+    position: sticky;
+    top: 6rem;
+}
+
+.brand-story-image-inner {
+    overflow: hidden;
+    border-radius: 1.5em;
+}
+
+.brand-story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.brand-story-bottom {
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+.brand-story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 3em;
+    padding-bottom: 3em;
+}
+
+.brand-story-grid .brand-story-text {
+    margin: 0;
+}
+
+.brand-story-slogan {
+    text-align: center;
+    font-size: clamp(20px, 2.1vw, 3em);
+    font-weight: 700;
+    color: var(--bg-red-show);
+    white-space: nowrap;
 }
