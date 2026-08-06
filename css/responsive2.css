@@ -1,0 +1,628 @@
+/* 
+* <576:     xs
+* 576-768:  sm
+* 768-992:  md
+* 992-1200: lg
+* 1200 -1400: xl
+* >= 1400:  xxl
+*/
+@media (max-width: 992px) {
+  .policy-zone-left,
+  .policy-zone-right {
+    min-width: 0;
+  }
+
+  .policy-layout {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+
+  .support-faq-container {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .register-note {
+    padding-top: 4em;
+  }
+
+  .policy-footnote {
+    margin-top: 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+    margin: 3em auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-title {
+    font-size: clamp(14px, 4vw, 2.8em);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* .about-title > br {
+    display: block;
+  } */
+
+  .box {
+    width: 47%;
+    justify-content: flex-start;
+  }
+
+  .box-thumb {
+    width: 30%;
+    height: clamp(10px, 6vw, 6em);
+  }
+
+  .box-info h4 {
+    font-size: clamp(8px, 5vw, 2.3em);
+  }
+
+  .box-info h5 {
+    font-size: clamp(6px, 3vw, 1.6em);
+  }
+
+  .box-divider {
+    display: none;
+  }
+
+  .problem-item p {
+    font-size: clamp(14px, 1.1vw, 2em);
+  }
+
+  .solutions-list {
+    gap: clamp(5px, 1.1vw, 2em);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .solution-item {
+    flex: none;
+    width: 30%;
+  }
+
+  .solution > h2 {
+    font-size: clamp(12px, 4vw, 3em);
+  }
+
+  .solution-icon {
+    width: clamp(30px, 10.5vw, 8em);
+    height: clamp(30px, 10.5vw, 8em);
+    padding: clamp(5px, 2vw, 2em);
+  }
+
+  .solution-number {
+    font-size: clamp(14px, 2.4vw, 1.8em);
+  }
+
+  .solution-text {
+    font-size: clamp(8px, 1.9vw, 1.8em);
+  }
+
+  .arrow-pointer {
+    display: none;
+  }
+
+  .solution-item::after {
+    display: none !important;
+  }
+
+  .solution {
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .solution::before {
+    content: none;
+  }
+
+  .solution h3 {
+    font-size: clamp(12px, 3vw, 2.4em);
+  }
+
+  .solutions-content > h2 {
+    font-size: clamp(12px, 4vw, 3em);
+    padding-bottom: 5px;
+  }
+
+  .solutions-content > h3 {
+    font-size: clamp(6px, 4vw, 2em);
+    padding-bottom: 3rem;
+  }
+
+  .steps-title {
+    font-size: clamp(6px, 2.8vw, 2.4em);
+  }
+
+  .maybi-solution {
+    grid-template-columns: 1fr;
+  }
+
+  /* mục benefit */
+  .benefit-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits_item {
+    padding: 2em;
+  }
+
+  .benefits_item-ttl {
+    font-size: clamp(12px, 2.6vw, 2.4em);
+  }
+
+  /* Mục Categories */
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .categories_name {
+    font-size: clamp(12px, 2.4vw, 1.8rem);
+  }
+
+  .categories_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .categories_list {
+    border-top: none;
+    padding-top: 0;
+    padding-left: 3em;
+  }
+
+  /* mục đăng ký */
+  .policy-table {
+    min-width: 100%;
+    font-size: 10px;
+  }
+
+  .policy-table-head th {
+    font-size: clamp(12px, 2.2vw, 1.8em);
+  }
+
+  .policy-cell {
+    font-size: clamp(12px, 2vw, 1.6em);
+  }
+
+  .form-input {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .policy-header p {
+    font-size: clamp(12px, 2vw, 1.8em);
+  }
+
+  .policy-footnote {
+    font-size: clamp(14px, 1.9vw, 1.8rem);
+    margin-top: 2em;
+  }
+
+  .policy-header .section-title,
+  .register-card .section-title {
+    font-size: clamp(12px, 2.7vw, 20px);
+    margin-bottom: 1em;
+  }
+
+  .register-note {
+    font-size: clamp(12px, 2.6vw, 1.8rem);
+  }
+
+  .register-submit {
+    font-size: clamp(12px, 2.4vw, 1.8rem);
+  }
+
+  /* QA */
+  .maybi-support-faq {
+    padding: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .support-list {
+    grid-template-columns: 1fr;
+  }
+  .countdown-timer {
+    gap: 5px;
+  }
+  .time-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .support-zone .section-title,
+  .faq-zone .section-title {
+    font-size: clamp(12px, 5.5vw, 2.4em);
+    margin-bottom: 4px;
+  }
+
+  .support-list li {
+    font-size: clamp(14px, 4.4vw, 1.8em);
+  }
+
+  .faq-item summary,
+  .faq-content {
+    font-size: clamp(12px, 4.4vw, 1.8em);
+  }
+
+  /*mục footer */
+  .footer-desc {
+    font-size: clamp(12px, 3vw, 2.4em);
+  }
+
+  .footer-logo {
+    width: 60%;
+  }
+
+  .footer-title {
+    font-size: clamp(12px, 2.9vw, 2.2em);
+  }
+
+  .social-link {
+    font-size: clamp(12px, 2.2vw, 1.6em);
+  }
+
+  .hotline-time {
+    font-size: clamp(10px, 2.6vw, 2em);
+  }
+
+  .maybi-footer {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .footer-about {
+    gap: 1em;
+  }
+
+  .hotline-icon-wrapper {
+    width: 4.8em;
+    height: 4.8em;
+  }
+
+  .benefit-title {
+    font-size: clamp(12px, 4vw, 3em);
+  }
+
+  /* Mục Categories */
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .categories_name {
+    font-size: clamp(12px, 2.4vw, 1.8rem);
+  }
+
+  .categories_title {
+    flex: 1;
+    padding-bottom: 0;
+    font-size: clamp(20px, 4vw, 4em);
+    padding-left: 16px;
+  }
+
+  .support-faq-container {
+    gap: 4em;
+  }
+
+  .step-item p {
+    font-size: clamp(8px, 2.2vw, 2em);
+  }
+
+  .about-title {
+    font-size: clamp(12px, 4vw, 3em);
+  }
+}
+
+@media (max-width: 575px) {
+  .about-title {
+    font-size: clamp(12px, 6vw, 3em);
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .solution {
+    width: 100%;
+    gap: 1.5em;
+  }
+
+  .solutions-list {
+    gap: 15px;
+    margin-bottom: 0;
+  }
+
+  .solution-item {
+    flex: none;
+    width: 47%;
+  }
+
+  .solution h3 {
+    font-size: clamp(12px, 5vw, 2.4em);
+  }
+
+  .solution > h2 {
+    font-size: clamp(12px, 5.8vw, 3em);
+  }
+
+  .solution-text {
+    font-size: clamp(14px, 3vw, 1.6em);
+  }
+
+  .solutions-content > h2 {
+    font-size: clamp(12px, 6vw, 3em);
+  }
+
+  .steps-title {
+    font-size: clamp(6px, 2.8vw, 2em);
+  }
+
+  .step-item {
+    gap: 0.5em;
+  }
+
+  .step-item p {
+    font-size: clamp(8px, 1.4vw, 2em);
+  }
+
+  .categories {
+    gap: 2.5em;
+  }
+
+  .categories_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories_title {
+    padding-left: 0;
+    font-size: clamp(13px, 4.6vw, 2.6em);
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .categories_title img {
+    margin: 0 auto;
+  }
+
+  .categories_list {
+    width: 100%;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .categories_name {
+    font-size: clamp(12px, 4vw, 1.8rem);
+  }
+
+  .benefit-title {
+    font-size: clamp(12px, 6vw, 3em);
+  }
+
+  .policy-card {
+    height: auto;
+  }
+
+  .policy-layout {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .support-zone .section-title,
+  .faq-zone .section-title {
+    font-size: clamp(12px, 6vw, 3em);
+    margin-bottom: 0;
+  }
+
+  .support-list li,
+  .faq-item summary,
+  .faq-content {
+    font-size: clamp(14px, 4.4vw, 2em);
+  }
+
+  .register-card {
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .maybi-countdown-section {
+    margin-top: 0;
+  }
+
+  .policy-header .section-title,
+  .register-card .section-title {
+    font-size: clamp(12px, 6vw, 3em);
+    white-space: normal;
+    margin-bottom: 1rem;
+  }
+
+  .policy-header p {
+    font-size: clamp(6px, 4vw, 2em);
+  }
+
+  .categories_name {
+    font-weight: 400;
+  }
+
+  .policy-table-head th:nth-child(1) {
+    width: 40%;
+  }
+
+  .countdown-title {
+    font-size: clamp(14px, 5vw, 2.2em);
+  }
+
+  .countdown-subtitle {
+    font-size: clamp(10px, 4.4vw, 1.8em);
+  }
+
+  .countdown-label {
+    font-size: clamp(12px, 4vw, 1.8em);
+  }
+
+  .countdown-unit {
+    font-size: clamp(14px, 1.2vw, 1.6em);
+  }
+
+  .countdown-number {
+    font-size: clamp(16px, 4.6vw, 24px);
+  }
+
+  .slots-label {
+    font-size: clamp(12px, 4vw, 1.8em);
+  }
+
+  .slots-count {
+    font-size: clamp(16px, 5vw, 2rem);
+  }
+
+  .slots-count .highlight {
+    font-size: clamp(16px, 5.7vw, 2.8rem);
+  }
+
+  .benefit-list {
+    grid-template-columns: 1fr;
+  }
+  .benefits_item-ttl {
+    font-size: clamp(14px, 3vw, 1.6em);
+  }
+
+  .benefits_item-hd {
+    width: clamp(30px, 10.5vw, 8em);
+    height: clamp(30px, 10.5vw, 8em);
+  }
+
+  .benefits_item-desc {
+    font-size: clamp(12px, 3vw, 1.6em);
+  }
+
+  .register-note {
+    font-size: clamp(14px, 1.9vw, 1.8rem);
+    padding-top: 2em;
+  }
+
+  .footer-logo {
+    width: 70%;
+  }
+
+  .footer-desc {
+    font-size: clamp(12px, 4vw, 2.4em);
+  }
+
+  .about-title > br {
+    display: block;
+  }
+
+  .solutions-steps {
+    display: none;
+  }
+
+  .policy-layout {
+    gap: 3em;
+  }
+
+  .policy-footnote {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .solution > h2 {
+    padding-top: 0;
+  }
+
+  .solutions-list {
+    gap: clamp(5px, 1vw, 1em);
+  }
+  .solution-icon {
+    padding: clamp(3px, 1.5vw, 10px);
+  }
+
+  .arrow-pointer {
+    display: none;
+  }
+
+  .solution-item::after {
+    display: none !important;
+  }
+
+  .solution {
+    justify-content: center;
+  }
+
+  .benefit-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step-item-img {
+    width: clamp(10px, 1.8vw, 2em);
+    height: clamp(10px, 1.8vw, 2em);
+  }
+
+  .solutions-steps {
+    padding: 1em;
+  }
+
+  .benefits_item-ttl {
+    font-size: clamp(14px, 2.1vw, 2.4em);
+  }
+
+  .benefits_item-desc {
+    font-size: clamp(8px, 1.9vw, 1.8em);
+  }
+
+  .register-note {
+    font-size: clamp(12px, 2vw, 1.8rem);
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+
+  .categories_list {
+    padding-top: 1.5em;
+  }
+
+  .policy-header p {
+    font-size: clamp(10px, 2vw, 1.8em);
+  }
+
+  .maybi-support-faq {
+    margin-bottom: 4em;
+  }
+}
+
+@media only screen and (min-width: 609px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}

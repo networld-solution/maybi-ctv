@@ -22,6 +22,12 @@
   --input-border-custom: #ced4da;
   --bg-content: #fdfaf5;
   --bg-list: rgba(242, 227, 216, 0.3);
+  --text-green: #1b5b31;
+  --text-gray: #364f42;
+  --bg-pink: #fef7f1;
+  --text-red: #b91e22;
+  --yellow: #ffeb3b;
+  --bg-btn-nav: #0068ff;
 }
 
 body {
