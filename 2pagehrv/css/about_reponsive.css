@@ -15,7 +15,9 @@
 
 
 @media (max-width: 1200px) {
-    
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -34,11 +36,15 @@
     .slider-dots {
         display: none;
     }
+
+
 }
 
 
 
 
 @media (max-width: 576px) {
-    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
