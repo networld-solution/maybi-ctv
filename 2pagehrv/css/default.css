@@ -27,6 +27,9 @@
   --bg-pink: #fef7f1;
   --bg-red-show: #ff3366;
   --bg-gray: rgba(0, 0, 0, 0.4);
+  --text-red: #e32f4c;
+  --text-gray: #737373;
+  --icon-social: #1877f2;
 }
 
 body {
