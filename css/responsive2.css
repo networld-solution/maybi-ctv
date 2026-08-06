@@ -539,6 +539,20 @@
   }
 }
 
+@media (max-width: 480px) {
+  .nav-buttons {
+    bottom: 0.2em;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    flex-direction: row;
+    gap: 2em;
+    padding: 0.7rem;
+    background-color: #e7e8e950;
+    border-radius: 3.2em;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
 }
 
