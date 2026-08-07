@@ -11,6 +11,11 @@
   /* Dùng clamp cho gap để khoảng cách tự động thu nhỏ trên màn hẹp hơn */
   gap: clamp(1.5em, 2vw, 4em);
   margin: 6em 0;
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 .contact-item {
@@ -84,7 +89,12 @@
   color: var(--text-gray);
 }
 
-.contact-left > h3 {
+.contact-connect {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-left > h2 {
   font-size: clamp(14px, 1.2vw, 40px);
   margin-bottom: 2em;
 }
@@ -93,6 +103,24 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  border-bottom: 0.1em solid #a1a1a1;
+  padding: 3em 0;
+  gap: 2em;
+}
+
+.sub_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sub_text > h3 {
+  font-size: clamp(14px, 1.2vw, 40px);
+}
+
+.sub_text p {
+  font-size: clamp(14px, 1vw, 26px);
+  color: var(--text-gray);
 }
 
 .sub_thumb {
@@ -101,8 +129,22 @@
   color: var(--icon-social);
 }
 
+.sub_thumb--black {
+  color: var(--black);
+}
+
+.sub_thumb--ins {
+  color: #e1306c;
+}
+
+.sub_thumb--yt {
+  color: red;
+}
+
 .sub_img {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
+  color: inherit;
+  fill: currentColor;
 }
