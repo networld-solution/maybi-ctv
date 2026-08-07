@@ -8,14 +8,8 @@
   font-size: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* Dùng clamp cho gap để khoảng cách tự động thu nhỏ trên màn hẹp hơn */
-  gap: clamp(1.5em, 2vw, 4em);
-  margin: 6em 0;
-  .contact {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-  }
+  /* gap: clamp(1.5em, 2vw, 4em); */
+  gap: 2.4em;
 }
 
 .contact-item {
@@ -39,6 +33,10 @@
   color: var(--text-red);
 }
 
+.contact-icon_thumb--blue {
+  color: var(--icon-social);
+}
+
 .contact-icon_img {
   width: 100%;
   height: 100%;
@@ -46,21 +44,26 @@
 }
 
 .contact-title {
-  font-size: clamp(14px, 1.2vw, 40px);
+  font-size: clamp(18px, 1.4vw, 38px);
   width: 100%;
-  white-space: nowrap;
+}
+
+.contact-title br {
+  display: none;
 }
 
 .contact-desc {
-  font-size: clamp(14px, 1vw, 26px);
+  font-size: clamp(16px, 1.1vw, 26px);
   line-height: 1.6;
   text-align: center;
-  white-space: nowrap;
   color: var(--text-gray);
   width: 100%;
 }
 
-.contact-content {
+.contact-content,
+.contact-connect,
+.contact-support,
+.contact-discover {
   margin: 6em auto;
 }
 
@@ -85,18 +88,19 @@
 }
 
 .contact-address_street > p {
-  font-size: clamp(14px, 1vw, 26px);
+  font-size: clamp(20px, 1.1vw, 26px);
   color: var(--text-gray);
 }
 
 .contact-connect {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 6em;
 }
 
 .contact-left > h2 {
-  font-size: clamp(14px, 1.2vw, 40px);
-  margin-bottom: 2em;
+  font-size: clamp(21px, 1.5vw, 38px);
+  margin-bottom: 1em;
 }
 
 .sub {
@@ -147,4 +151,204 @@
   flex-shrink: 0;
   color: inherit;
   fill: currentColor;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0.1em solid #e5e5e5;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5em;
+  gap: 2em;
+  /* padding: clamp(3em, 2vw, 5em) clamp(2em, 1.6vw, 4em);
+   */
+  padding: 5em 4em;
+}
+
+.contact-form > h2 {
+  font-size: clamp(21px, 1.5vw, 38px);
+  text-align: left;
+}
+
+.contact-form_ele {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.contact-form_ele label {
+  font-size: clamp(14px, 1vw, 26px);
+}
+
+.contact-form_ele_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contact-form_ele_item span {
+  color: var(--text-red);
+}
+
+.contact-form_ele_item input,
+.contact-form_ele_item select,
+.contact-form_ele_item textarea {
+  border-radius: 0.5em;
+  padding: 1em 1.5em;
+  border: 0.1em solid #ccc;
+  background-color: #fff;
+  font-size: clamp(14px, 1vw, 18px);
+  color: var(--text-gray);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form_ele_item input:focus,
+.contact-form_ele_item select:focus,
+.contact-form_ele_item textarea:focus {
+  border-color: var(--text-red);
+  box-shadow: 0 0 0 3px rgba(227, 47, 76, 0.1);
+}
+
+.contact-form_ele_item select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.contact-form_ele_item select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-form_ele_item select option:checked {
+  background-color: #e5e5e5;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: var(--text-red);
+  padding: 1.5em 1em;
+  border: none;
+  border-radius: 1em;
+}
+
+.btn-submit span {
+  font-size: clamp(14px, 1.2vw, 40px);
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-support {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5em;
+}
+
+.contact-support .contact-desc {
+  max-width: 90%;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+.contact-btn button {
+  border: 0.1em solid var(--text-red);
+  border-radius: 1em;
+  background-color: #fff;
+  padding: 1.2em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn button:hover {
+  background-color: var(--text-red);
+}
+
+.contact-btn button:hover span {
+  color: #fff;
+}
+
+.contact-btn span {
+  color: var(--text-red);
+  font-size: clamp(14px, 1vw, 22px);
+  font-weight: bold;
+}
+
+.contact-discover {
+  font-size: 1rem;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 35%,
+      rgba(255, 255, 255, 0) 67%
+    ),
+    url("../public/images/cta-office.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+}
+
+.discover-list {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 6em;
+  gap: 2em;
+}
+
+.discover-list_title {
+  font-size: clamp(24px, 2vw, 5.2em);
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.discover-list_item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.btn-buy,
+.btn-sale {
+  padding: 1em 2em;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: clamp(14px, 1vw, 22px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-buy {
+  background-color: var(--text-red);
+  color: #fff;
+  border: 0.1em solid var(--text-red);
+}
+
+.btn-buy:hover {
+  background-color: #fff;
+  color: var(--text-red);
+}
+
+.btn-sale {
+  background-color: #fff;
+  color: var(--black);
+  border: 0.1em solid #e5e5e5;
+}
+
+.btn-sale:hover {
+  border-color: var(--black);
 }

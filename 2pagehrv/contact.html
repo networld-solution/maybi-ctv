@@ -65,6 +65,12 @@
                     d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z">
                 </path>
             </symbol>
+
+            <symbol id="icon-messenger" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 0C5.373 0 0 4.974 0 11.111c0 3.498 1.744 6.614 4.469 8.654V24l4.088-2.242c1.092.301 2.246.464 3.443.464 6.627 0 12-4.974 12-11.111S18.627 0 12 0zm1.191 14.963l-3.055-3.26-5.963 3.26 6.559-6.963 3.131 3.259 5.889-3.259-6.561 6.963z">
+                </path>
+            </symbol>
         </defs>
     </svg>
 
@@ -115,7 +121,7 @@
                         </svg>
                     </div>
                 </div>
-                <h3 class="contact-title"><strong>THỜI GIAN LÀM VIỆC</strong></h3>
+                <h3 class="contact-title"><strong>THỜI GIAN <br> LÀM VIỆC</strong></h3>
                 <p class="contact-desc">Thứ hai - Thứ sáu,<br>09.00 - 18.00</p>
             </div>
         </div>
@@ -146,10 +152,10 @@
     <section class="contact">
         <div class="contact-connect">
             <div class="contact-left">
-                <h2>Kết nối Maybi</h2>
+                <h2>Kết nối MAYBI</h2>
                 <ul class="connect-list">
                     <li class="connect-item">
-                        <a class="sub" href="https://www.facebook.com/maybi.official">
+                        <a class="sub" href="https://www.facebook.com/maybi.official" target="_blank">
                             <div class="sub_thumb">
                                 <svg class="sub_img">
                                     <use href="#icon-fb"></use>
@@ -163,7 +169,7 @@
                     </li>
 
                     <li class="connect-item">
-                        <a class="sub" href="https://www.facebook.com/maybi.official">
+                        <a class="sub" href="https://www.facebook.com/maybi.official" target="_blank">
                             <div class="sub_thumb">
                                 <svg class="sub_img">
                                     <use href="#icon-fb"></use>
@@ -177,7 +183,7 @@
                     </li>
 
                     <li class="connect-item">
-                        <a class="sub" href="https://www.facebook.com/maybi.official">
+                        <a class="sub" href="https://www.facebook.com/maybi.official" target="_blank">
                             <div class="sub_thumb sub_thumb--black">
                                 <svg class="sub_img">
                                     <use href="#icon-tiktok"></use>
@@ -191,7 +197,7 @@
                     </li>
 
                     <li class="connect-item">
-                        <a class="sub" href="https://www.facebook.com/maybi.official">
+                        <a class="sub" href="https://www.facebook.com/maybi.official" target="_blank">
                             <div class="sub_thumb sub_thumb--ins">
                                 <svg class="sub_img">
                                     <use href="#icon-ig"></use>
@@ -205,7 +211,7 @@
                     </li>
 
                     <li class="connect-item">
-                        <a class="sub" href="https://www.facebook.com/maybi.official">
+                        <a class="sub" href="https://www.facebook.com/maybi.official" target="_blank">
                             <div class="sub_thumb sub_thumb--yt">
                                 <svg class="sub_img">
                                     <use href="#icon-yt"></use>
@@ -219,7 +225,7 @@
                     </li>
 
                     <li class="connect-item">
-                        <a class="sub" href="https://www.facebook.com/maybi.official">
+                        <a class="sub" href="https://www.facebook.com/maybi.official" target="_blank">
                             <div class="sub_thumb">
                                 <img src="https://maybi.vercel.app/images/zalo-icon.png" class="sub_img">
                                 </img>
@@ -235,10 +241,108 @@
             <div class="contact-right">
                 <div class="contact-form">
                     <h2>Thông tin hỗ trợ</h2>
+                    <form class="contact-form_ele" id="maybi-contact-form">
+                        <div class="contact-form_ele_item">
+                            <label>Họ tên <span>*</span></label>
+                            <input type="text" name="ho_ten" placeholder="Nhập họ và tên">
+                        </div>
+
+                        <div class="contact-form_ele_item">
+                            <label>Điện thoại <span>*</span></label>
+                            <input type="text" name="so_dien_thoai" placeholder="Nhập số điện thoại">
+                        </div>
+
+                        <div class="contact-form_ele_item"><label for="">Email <span>*</span></label>
+                            <input type="text" name="email" placeholder="Nhập email">
+                        </div>
+
+                        <div class="contact-form_ele_item"> <label for="">Chủ đề <span>*</span></label>
+                            <select name="chu_de">
+                                <option value="0">Chọn chủ đề</option>
+                                <option value="1">Tư vấn sản phẩm</option>
+                                <option value="2">Hỗ trợ đơn hàng</option>
+                                <option value="3">Đổi trả - bảo hành</option>
+                                <option value="4">Hợp tác - khác</option>
+                            </select>
+                        </div>
+
+                        <div class="contact-form_ele_item"><label for="">Nội dung <span>*</span></label>
+                            <textarea name="noi_dung" rows="8" placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit" id="submit-contact-btn"><span>GỬI THÔNG TIN</span></button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <div class="contact-support">
+            <!-- Khối 1 -->
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <div class="contact-icon_thumb">
+                        <svg class="contact-icon_img">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="contact-title"><strong>HOTLINE</strong></h3>
+                <p class="contact-desc">Gọi ngay để được tư vấn miễn phí nhanh chóng</p>
+                <a href="tel:0911571166" class="contact-btn" target="_blank">
+                    <button>
+                        <span>GỌI NGAY</span>
+                    </button>
+                </a>
+            </div>
+            <!-- Khối 2 -->
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <div class="contact-icon_thumb">
+                        <img class="sub_img" src="../2pagehrv/public/images/zalo-icon.png">
+                    </div>
+                </div>
+                <h3 class="contact-title"><strong>ZALO</strong></h3>
+                <p class="contact-desc">Nhắn tin Zalo để được hỗ trợ nhanh nhất</p>
+                <a href="https://zalo.me/0911571166" class="contact-btn" target="_blank">
+                    <button>
+                        <span>NHẮN ZALO</span>
+                    </button>
+                </a>
+            </div>
+            <!-- Khối 3 -->
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <div class="contact-icon_thumb contact-icon_thumb--blue">
+                        <svg class="contact-icon_img">
+                            <use href="#icon-messenger"></use>
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="contact-title"><strong>MESSENGER</strong></h3>
+                <p class="contact-desc">Chat với chúng tôi trên Facebook Messenger</p>
+                <a href="https://m.me/maybi.official" class="contact-btn" target="_blank">
+                    <button>
+                        <span>CHAT NGAY</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-discover">
+            <div class="discover-list">
+                <h2 class="discover-list_title">Khám phá phong cách thanh lịch dành riêng cho bạn</h2>
+                <div class="discover-list_item">
+                    <button class="btn-buy" id=""><span>MUA SẮM NGAY</span></button>
+                    <button class="btn-sale" id=""><span>BEST SELLER</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/maybi_contact.js"></script>
 </body>
 
 </html>

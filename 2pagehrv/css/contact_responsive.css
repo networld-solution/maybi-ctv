@@ -7,9 +7,6 @@
 * >= 1400:  xxl
 */
 
-@media (max-width: 1400px) {
-}
-
 @media (max-width: 992px) {
 }
 
@@ -22,13 +19,54 @@
 @media (max-width: 768px) {
   .contact {
     width: 100%;
-    margin: 3em auto;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .contact-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-title {
+    font-size: clamp(22px, 3vw, 30px);
+  }
+
+  .contact-desc {
+    font-size: clamp(20px, 2.6vw, 26px);
+  }
+
+  .contact-connect,
+  .contact-support,
+  .contact-discover {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-discover {
+    aspect-ratio: 1 / 1;
+    align-items: start;
+
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 0) 80%
+      ),
+      url("../public/images/cta-office-mobile.jpg");
+
+    background-position: center bottom;
+  }
+
+  .discover-list {
+    padding: 8em 6em;
+  }
+
+  .discover-list_item {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+    width: 100%;
   }
 }
 
@@ -38,6 +76,10 @@
 @media (max-width: 575px) {
   .contact-list {
     grid-template-columns: 1fr;
+  }
+
+  .contact-address_street > p {
+    font-size: clamp(10px, 4.9vw, 3em);
   }
 }
 
@@ -51,8 +93,62 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .contact-title {
+    font-size: clamp(24px, 3vw, 3em);
+  }
+
+  .contact-desc {
+    font-size: clamp(13px, 1.6vw, 2em);
+  }
+
+  .contact-address_street > p {
+    font-size: clamp(20px, 2.6vw, 2.6em);
+  }
+
   .contact-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+    padding: 3em;
+  }
+
+  .contact-left > h2,
+  .contact-form > h2 {
+    font-size: clamp(20px, 2.6vw, 2.6em);
+  }
+
+  .sub_text > h3 {
+    font-size: clamp(14px, 2vw, 2em);
+  }
+
+  .sub_text p {
+    font-size: clamp(14px, 1.8vw, 1.8em);
+  }
+
+  .contact-form_ele label {
+    font-size: clamp(14px, 2vw, 2em);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .contact-desc {
+    font-size: clamp(16px, 1.3vw, 2.6em);
+  }
+
+  .contact-title {
+    font-size: clamp(18px, 1.4vw, 3.8em);
+  }
+
+  .contact-list {
+    gap: 2em;
   }
 }
 
