@@ -9,43 +9,101 @@
 
 
 @media (max-width: 1400px) {
-    
+
 }
 
 
-
 @media (max-width: 1200px) {
+    .about {
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+   
     .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .timeline-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .team-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 
-
 @media (max-width: 992px) {
     .brand-story {
-        padding: 4em 15px;
+        padding: 4em 0;
     }
-    
+
     .brand-story-top {
         grid-template-columns: 1fr;
     }
-    
+
     .brand-story-image-wrapper {
         position: relative;
         top: auto;
     }
-    
+
     .brand-story-grid {
         grid-template-columns: 1fr;
         gap: 2em;
     }
-    
+
     .brand-story-slogan {
         white-space: normal;
     }
 
-       .desktop-br {
+    .desktop-br {
+        display: none;
+    }
+
+    .reasons-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-top-grid {
+        grid-template-columns: 1fr;
+    }
+
+      .collection-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .collection-title {
+        text-align: center;
+    }
+    
+    .collection-title br {
+        display: none;
+    }
+    
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .policy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .faq-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .faq-heading br {
         display: none;
     }
 }
@@ -53,10 +111,22 @@
 
 
 @media (max-width: 768px) {
-    .stat-label {
-        white-space: normal;
+    .about {
+        width: 100%;
+        margin: 3em auto;
+        padding-left: 2em;
+        padding-right: 2em;
     }
-    
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .mobile-br {
+        display: block;
+    }
+
     .slider-control {
         display: none;
     }
@@ -65,14 +135,42 @@
         display: none;
     }
 
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 
 }
 
 
-
-
 @media (max-width: 576px) {
+    .stat-label {
+        font-size: clamp(14px, 3.5vw, 1.8em);
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .core-values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .policy-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .collection-content {
+        padding: 0.8em;
+    }
+  
 }
