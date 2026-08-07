@@ -59,12 +59,11 @@
   }
 
   .discover-list {
-    padding: 8em 6em;
+    padding: 4em 5%; 
   }
 
   .discover-list_item {
     display: flex;
-    flex-wrap: nowrap;
     gap: 2em;
     width: 100%;
   }
@@ -80,6 +79,15 @@
 
   .contact-address_street > p {
     font-size: clamp(10px, 4.9vw, 3em);
+  }
+
+  .discover-list {
+    padding: 2em 5%;
+  }
+
+  .btn-buy,
+  .btn-sale {
+    padding: 0.5em 1em;
   }
 }
 
