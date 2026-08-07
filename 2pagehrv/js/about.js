@@ -87,4 +87,28 @@ const SliderMain = (function () {
 
 document.addEventListener("DOMContentLoaded", function (event) {
     SliderMain.init();
+    
+    // FAQ Accordion Logic
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.closest('.faq-item');
+            const isExpanded = question.getAttribute('aria-expanded') === 'true';
+            
+            // Optional: Close all other open FAQs (Accordion style)
+            // document.querySelectorAll('.faq-item').forEach(item => {
+            //     item.classList.remove('active');
+            //     item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            // });
+
+            if (isExpanded) {
+                faqItem.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
+            } else {
+                faqItem.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
 });
