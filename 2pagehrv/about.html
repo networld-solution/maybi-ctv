@@ -163,8 +163,8 @@
     </section>
 
     <!-- Brand Story Section -->
-    <section class="about">
-        <div class="brand-story">
+    <section class="about--border">
+        <div class="about brand-story brand-story--border">
             <!-- Top Part -->
             <div class="brand-story-top">
                 <div class="brand-story-content">
@@ -228,7 +228,7 @@
 
     <!-- Values Section -->
     <section class="about">
-        <div class="values-section values-container">
+        <div class="values-section">
             <!-- Top Part -->
             <div class="values-top-grid">
                 <!-- Mission -->
@@ -586,6 +586,13 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="slider-dots collection-dots">
+                <button class="slider-dot" data-index="0"></button>
+                <button class="slider-dot active" data-index="1"></button>
+                <button class="slider-dot" data-index="2"></button>
+                <button class="slider-dot" data-index="3"></button>
             </div>
         </div>
     </section>
@@ -599,8 +606,8 @@
                     <div class="testimonial-header">
                         <img src="./public/images/avatar-1.png" alt="Thu Hà" class="testimonial-avatar">
                         <div class="testimonial-info">
-                            <p class="testimonial-name">Thu Hà</p>
-                            <p class="testimonial-loc">Hà Nội</p>
+                            <span class="testimonial-name">Thu Hà</span>
+                            <span class="testimonial-loc">Hà Nội</span>
                             <div class="testimonial-stars">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -648,8 +655,8 @@
                     <div class="testimonial-header">
                         <img src="./public/images/avatar-2.png" alt="Mai Anh" class="testimonial-avatar">
                         <div class="testimonial-info">
-                            <p class="testimonial-name">Mai Anh</p>
-                            <p class="testimonial-loc">TP. Hồ Chí Minh</p>
+                            <span class="testimonial-name">Mai Anh</span>
+                            <span class="testimonial-loc">TP. Hồ Chí Minh</span>
                             <div class="testimonial-stars">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -697,8 +704,8 @@
                     <div class="testimonial-header">
                         <img src="./public/images/avatar-3.png" alt="Lan Phương" class="testimonial-avatar">
                         <div class="testimonial-info">
-                            <p class="testimonial-name">Lan Phương</p>
-                            <p class="testimonial-loc">Đà Nẵng</p>
+                            <span class="testimonial-name">Lan Phương</span>
+                            <span class="testimonial-loc">Đà Nẵng</span>
                             <div class="testimonial-stars">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -746,8 +753,8 @@
                     <div class="testimonial-header">
                         <img src="./public/images/avatar-4.png" alt="Thanh Thảo" class="testimonial-avatar">
                         <div class="testimonial-info">
-                            <p class="testimonial-name">Thanh Thảo</p>
-                            <p class="testimonial-loc">Cần Thơ</p>
+                            <span class="testimonial-name">Thanh Thảo</span>
+                            <span class="testimonial-loc">Cần Thơ</span>
                             <div class="testimonial-stars">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -860,96 +867,99 @@
             <div class="faq-container">
                 <h2 class="faq-heading">CÂU HỎI <br>THƯỜNG GẶP</h2>
 
-                <div class="faq-col">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span class="faq-question-text">Maybi là thương hiệu của ai?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="faq-icon" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Maybi là thương hiệu thời trang nữ Việt được thành lập năm 2018, hướng đến phong cách
-                                thanh lịch, hiện đại và dễ ứng dụng.</p>
+                <div class="faq-content">
+                    <div class="faq-col">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text">Maybi là thương hiệu của ai?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="faq-icon" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Maybi là thương hiệu thời trang nữ Việt được thành lập năm 2018, hướng đến phong cách
+                                    thanh lịch, hiện đại và dễ ứng dụng.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text">Maybi có cửa hàng không?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="faq-icon" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Maybi có hệ thống cửa hàng cùng các kênh bán hàng online đa dạng trên toàn quốc.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text">Thời gian giao hàng là bao lâu?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="faq-icon" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Thời gian giao hàng thường từ 2-5 ngày làm việc tùy khu vực.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span class="faq-question-text">Maybi có cửa hàng không?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="faq-icon" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Maybi có hệ thống cửa hàng cùng các kênh bán hàng online đa dạng trên toàn quốc.</p>
+
+                    <div class="faq-col">
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text">Maybi có bán trên Shopee, Lazada không?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="faq-icon" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Có, Maybi hiện diện trên các sàn thương mại điện tử lớn như Shopee và Lazada.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span class="faq-question-text">Thời gian giao hàng là bao lâu?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="faq-icon" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Thời gian giao hàng thường từ 2-5 ngày làm việc tùy khu vực.</p>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text">Chính sách đổi trả của Maybi như thế nào?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="faq-icon" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Maybi hỗ trợ đổi trả trong vòng 7 ngày với sản phẩm còn nguyên tem mác.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text">Làm sao để liên hệ với Maybi?</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="faq-icon" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5v14"></path>
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Bạn có thể liên hệ qua hotline 0911 511 166 hoặc email hello@maybi.vn.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="faq-col">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span class="faq-question-text">Maybi có bán trên Shopee, Lazada không?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="faq-icon" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Có, Maybi hiện diện trên các sàn thương mại điện tử lớn như Shopee và Lazada.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span class="faq-question-text">Chính sách đổi trả của Maybi như thế nào?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="faq-icon" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Maybi hỗ trợ đổi trả trong vòng 7 ngày với sản phẩm còn nguyên tem mác.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            <span class="faq-question-text">Làm sao để liên hệ với Maybi?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="faq-icon" aria-hidden="true">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5v14"></path>
-                            </svg>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Bạn có thể liên hệ qua hotline 0911 511 166 hoặc email hello@maybi.vn.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

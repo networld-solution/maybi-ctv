@@ -7,170 +7,247 @@
 * >= 1400:  xxl
 */
 
-
 @media (max-width: 1400px) {
-
 }
-
 
 @media (max-width: 1200px) {
-    .about {
-        width: 100%;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-   
-    .stats-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .about {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-    .timeline-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .timeline-line {
-        display: none;
-    }
+  .timeline-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .team-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .timeline-line {
+    display: none;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
 
 @media (max-width: 992px) {
-    .brand-story {
-        padding: 4em 0;
-    }
+  .brand-story {
+    padding: 4em 0;
+  }
 
-    .brand-story-top {
-        grid-template-columns: 1fr;
-    }
+  .brand-story-top {
+    grid-template-columns: 1fr;
+  }
 
-    .brand-story-image-wrapper {
-        position: relative;
-        top: auto;
-    }
+  .brand-story-image-wrapper {
+    position: relative;
+    top: auto;
+  }
 
-    .brand-story-grid {
-        grid-template-columns: 1fr;
-        gap: 2em;
-    }
+  .brand-story-grid {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
 
-    .brand-story-slogan {
-        white-space: normal;
-    }
+  .brand-story-slogan {
+    white-space: normal;
+  }
 
-    .desktop-br {
-        display: none;
-    }
+  .desktop-br {
+    display: none;
+  }
 
-    .reasons-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .reasons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    .values-top-grid {
-        grid-template-columns: 1fr;
-    }
+  .values-top-grid {
+    grid-template-columns: 1fr;
+  }
 
-      .collection-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .collection-title {
-        text-align: center;
-    }
-    
-    .collection-title br {
-        display: none;
-    }
-    
-    .collection-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .collection-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-    .testimonial-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .policy-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .faq-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .faq-heading br {
-        display: none;
-    }
+  .collection-title {
+    text-align: center;
+  }
+
+  .collection-title br {
+    display: none;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .policy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .faq-heading br {
+    display: none;
+  }
 }
-
-
 
 @media (max-width: 768px) {
-    .about {
-        width: 100%;
-        margin: 3em auto;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+  .about {
+    width: 100%;
+    margin: 3em auto;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .mobile-br {
+    display: block;
+  }
 
-    .mobile-br {
-        display: block;
-    }
+  .slider-control {
+    display: none;
+  }
 
-    .slider-control {
-        display: none;
-    }
+  .slider-dots {
+    display: none;
+  }
 
-    .slider-dots {
-        display: none;
-    }
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4em;
+  }
 
-    .reasons-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
+  .timeline-text {
+    font-size: clamp(12px, 1.8vw, 1.2em);
+  }
 
+  .team-name {
+    font-size: clamp(14px, 1.5vw, 1.4em);
+  }
+
+  .team-desc {
+    font-size: clamp(12px, 0.9vw, 1.2em);
+  }
+
+  .team-btn {
+    font-size: clamp(14px, 2vw, 1.4em);
+  }
+
+ 
 }
 
-
 @media (max-width: 576px) {
-    .stat-label {
-        font-size: clamp(14px, 3.5vw, 1.8em);
-    }
+  .stat-label {
+    font-size: clamp(14px, 3.5vw, 1.8em);
+  }
 
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .core-values-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
+  .core-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 
-    .timeline-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .policy-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .collection-content {
-        padding: 0.8em;
-    }
-  
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-content {
+    padding: 0.8em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .stat-number {
+    font-size: clamp(20px, 1.7vw, 2em);
+  }
+
+  .stat-label,
+  .timeline-text,
+  .team-name,
+  .core-value-label,
+  .team-desc {
+    font-size: clamp(12px, 1.1vw, 1.2em);
+  }
+
+  .core-value-label {
+    margin-top: 1em;
+  }
+
+  .brand-story-text,
+  .timeline-year {
+    font-size: clamp(14px, 1.4vw, 1.6em);
+  }
+
+  .brand-story-slogan {
+    font-size: clamp(24px, 2.1vw, 2.4em);
+  }
+
+  .value-title {
+    font-size: clamp(18px, 1.6vw, 1.8em);
+  }
+
+  .value-text,
+  .team-name,
+  .reason-label,
+  .brand-story-subtitle,
+  .team-btn {
+    font-size: clamp(14px, 1.2vw, 1.4em);
+  }
+
+  .reasons-title,
+  .timeline-title,
+  .team-title,
+  .brand-story-title {
+    font-size: clamp(30px, 2.6vw, 3em);
+  }
+
+  .timeline-section {
+    margin-top: 15em;
+  }
+
+  .reasons-grid {
+    row-gap: 4em;
+  }
+}
+
+@media only screen and (min-width: 609px) and (max-width: 991px) {
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
 }
