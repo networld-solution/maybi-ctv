@@ -8,6 +8,7 @@
   font-size: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 6em;
   /* gap: clamp(1.5em, 2vw, 4em); */
   gap: 2.4em;
 }
@@ -235,7 +236,7 @@
 .btn-submit {
   width: 100%;
   background-color: var(--text-red);
-  padding: 1.5em 1em;
+  padding: 1em;
   border: none;
   border-radius: 1em;
 }
@@ -263,7 +264,7 @@
   border: 0.1em solid var(--text-red);
   border-radius: 1em;
   background-color: #fff;
-  padding: 1.2em 2em;
+  padding: 0.5em 1.5em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -311,7 +312,7 @@
 }
 
 .discover-list_title {
-  font-size: clamp(22px, 2vw, 5.2em);
+  font-size: clamp(30px, 2vw, 5.2em);
   line-height: 1.2;
   color: var(--black);
 }

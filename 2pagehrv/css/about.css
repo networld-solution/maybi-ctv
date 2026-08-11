@@ -407,7 +407,8 @@
 .timeline-grid {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  gap: 2em;
+  column-gap: 2em;
+  row-gap: 4em;
   position: relative;
 }
 

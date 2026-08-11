@@ -19,6 +19,7 @@
 
   .stats-grid {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 4em;
   }
 
   .timeline-grid {
@@ -31,6 +32,7 @@
 
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
   }
 }
 
@@ -84,10 +86,12 @@
 
   .collection-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
   }
 
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
   }
 
   .policy-grid {
@@ -124,9 +128,6 @@
     display: none;
   }
 
-  .slider-dots {
-    display: none;
-  }
 
   .reasons-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -148,8 +149,6 @@
   .team-btn {
     font-size: clamp(14px, 2vw, 1.4em);
   }
-
- 
 }
 
 @media (max-width: 576px) {
