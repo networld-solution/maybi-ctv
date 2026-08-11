@@ -7,14 +7,16 @@
 * >= 1400:  xxl
 */
 
-@media (max-width: 1400px) {
-}
-
 @media (max-width: 1200px) {
   .about {
     width: 100%;
     padding-left: 2em;
     padding-right: 2em;
+  }
+
+  .brand-story {
+    width: 100%;
+    margin: 10em auto;
   }
 
   .stats-grid {
@@ -42,10 +44,6 @@
 }
 
 @media (max-width: 992px) {
-  .brand-story {
-    padding: 4em 0;
-  }
-
   .brand-story-top {
     grid-template-columns: 1fr;
   }
@@ -153,9 +151,14 @@
   .team-btn {
     font-size: clamp(14px, 2vw, 1.4em);
   }
+
+  .faq-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .stat-label {
     font-size: clamp(14px, 3.5vw, 1.8em);
   }
@@ -166,7 +169,7 @@
 
   .core-values-grid {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 2em;
+    row-gap: 4em;
   }
 
   .timeline-grid {
@@ -241,11 +244,19 @@
   }
 
   .timeline-section {
-    margin-top: 15em;
+    margin-top: 12em;
   }
 
   .reasons-grid {
     row-gap: 4em;
+  }
+
+  .collection-title {
+    font-size: clamp(16px, 2.2vw, 2.6em);
+  }
+
+  .faq-heading {
+    font-size: clamp(16px, 2.2vw, 2.6em);
   }
 }
 
