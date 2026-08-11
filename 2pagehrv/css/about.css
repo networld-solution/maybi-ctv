@@ -16,7 +16,7 @@
   width: 100%;
   overflow: hidden;
 }
-
+/*
 .slider-wrapper {
   display: grid;
   width: 100%;
@@ -34,7 +34,7 @@
   opacity: 1;
   pointer-events: auto;
   z-index: 2;
-}
+} */
 
 .slider-thumb {
   width: 100%;
@@ -85,7 +85,7 @@
 }
 
 /* Dots (Chấm phân trang) */
-.slider-dots {
+/* .slider-dots {
   position: absolute;
   bottom: 2em;
   left: 50%;
@@ -110,6 +110,35 @@
 .slider-dot.active {
   width: 2.5rem;
   background: var(--bg-red-show);
+} */
+.swiper-pagination {
+  position: absolute;
+  bottom: 2em;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex;
+  gap: 1em;
+  z-index: 10;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 0.5rem !important;
+  background: var(--bg-gray) !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition:
+    width 0.3s,
+    background 0.3s !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 2.5rem !important;
+  background: var(--bg-red-show) !important;
 }
 
 /* === STATS SECTION === */

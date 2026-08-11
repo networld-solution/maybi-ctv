@@ -17,7 +17,6 @@ const MaybiContact = (function () {
         return;
       }
 
-      // Regex kiểm tra chỉ chứ
       const nameRegex = /^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$/;
       if (!nameRegex.test(hoTen)) {
         alert("Họ và tên chỉ được chứa chữ cái, không được chứa số hoặc ký tự đặc biệt.");

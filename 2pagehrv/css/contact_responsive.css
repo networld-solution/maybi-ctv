@@ -133,7 +133,7 @@
   }
 
   .contact-address_street > p {
-    font-size: clamp(20px, 2.6vw, 2.6em);
+    font-size: clamp(13px, 1.6vw, 2em);
   }
 
   .contact-list {

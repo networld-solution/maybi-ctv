@@ -10,12 +10,13 @@
     <link rel='stylesheet' href='css/contact.css'>
     <link rel='stylesheet' href='css/contact_responsive.css'>
     <link rel='stylesheet' href='css/about_reponsive.css'>
+    <link rel="stylesheet" href="./public/css/swiper-bundle.min.css">
 </head>
 
 <body>
-    <section class="slider">
-        <div class="slider-wrapper">
-            <div class="slider-item">
+    <section class="slider swiper">
+        <div class="slider-wrapper swiper-wrapper">
+            <div class="slider-item swiper-slide">
                 <div class="slider-thumb">
                     <picture>
                         <source media="(max-width: 768px)" srcset="public/images/slider-2-mobile.jpg">
@@ -23,7 +24,7 @@
                     </picture>
                 </div>
             </div>
-            <div class="slider-item">
+            <div class="slider-item swiper-slide">
                 <div class="slider-thumb">
                     <picture>
                         <source media="(max-width: 768px)" srcset="public/images/slider-3-mobile.jpg">
@@ -31,7 +32,7 @@
                     </picture>
                 </div>
             </div>
-            <div class="slider-item">
+            <div class="slider-item swiper-slide">
                 <div class="slider-thumb">
                     <picture>
                         <source media="(max-width: 768px)" srcset="public/images/slider-4-mobile.jpg">
@@ -39,7 +40,7 @@
                     </picture>
                 </div>
             </div>
-            <div class="slider-item">
+            <div class="slider-item swiper-slide">
                 <div class="slider-thumb">
                     <picture>
                         <source media="(max-width: 768px)" srcset="public/images/slider-5-mobile.jpg">
@@ -60,14 +61,15 @@
                 <path d="M9 18l6-6-6-6" />
             </svg>
         </button>
-
+        <div class="swiper-pagination"></div>
         <!-- Dots -->
-        <div class="slider-dots">
+        <!-- <div class="slider-dots">
             <button class="slider-dot active" data-index="0"></button>
             <button class="slider-dot" data-index="1"></button>
             <button class="slider-dot" data-index="2"></button>
             <button class="slider-dot" data-index="3"></button>
-        </div>
+        </div> -->
+
     </section>
 
     <!-- Stats Section -->
@@ -976,7 +978,7 @@
         </div>
     </section>
 
-
+    <script src="./public/js/swiper-bundle.min.js"></script>
     <script src="js/about.js"></script>
 </body>
 
