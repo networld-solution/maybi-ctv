@@ -169,7 +169,7 @@
 }
 
 .stat-number {
-  font-size: clamp(20px, 1.7vw, 2.4em);
+  font-size: clamp(18px, 1.5vw, 3.8em);
   font-weight: bold;
 }
 
@@ -178,7 +178,7 @@
 }
 
 .stat-label {
-  font-size: clamp(14px, 1.2vw, 1.6em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   color: var(--bg-gray);
   white-space: nowrap;
 }
@@ -198,7 +198,7 @@
 }
 
 .brand-story-subtitle {
-  font-size: clamp(14px, 1.2vw, 1.6em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -207,17 +207,17 @@
 
 .brand-story-title {
   margin-top: 0.5em;
-  font-size: clamp(20px, 2.1vw, 3em);
+  font-size: clamp(26px, 1.7vw, 4.2em);
   font-weight: 700;
   color: var(--bg-red-show);
   margin-bottom: 1em;
 }
 
 .brand-story-text {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
   line-height: 1.8;
   font-weight: 300;
-  font-size: clamp(14px, 1.2vw, 1.6em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   color: var(--text-gray);
 }
 
@@ -267,8 +267,8 @@
 }
 
 .brand-story-slogan {
+  font-size: clamp(28px, 1.5vw, 3.8em);
   text-align: center;
-  font-size: clamp(20px, 2.1vw, 3em);
   font-weight: bold;
   color: var(--bg-red-show);
   white-space: nowrap;
@@ -330,7 +330,7 @@
 }
 
 .value-title {
-  font-size: clamp(14px, 1.2vw, 1.6em);
+  font-size: clamp(18px, 1.5vw, 3.8em);
   font-weight: 700;
   letter-spacing: 0.025em;
   color: var(--black);
@@ -338,7 +338,7 @@
 
 .value-text {
   font-weight: 300;
-  font-size: clamp(10px, 0.9vw, 1.2em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   line-height: 1.8;
   color: var(--text-gray);
 }
@@ -354,11 +354,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
 
 .core-value-label {
-  font-size: clamp(10px, 0.9vw, 1.2em);
+  font-size: clamp(12px, 1vw, 2.4em);
 }
 
 .values-bottom {
@@ -366,8 +366,8 @@
 }
 
 .reasons-title {
+  font-size: clamp(28px, 1.5vw, 3.8em);
   text-align: center;
-  font-size: clamp(20px, 2.5vw, 3em);
   font-weight: 700;
   color: var(--black);
 }
@@ -394,7 +394,7 @@
 }
 
 .reason-label {
-  font-size: clamp(10px, 1vw, 1.4em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   font-weight: 500;
 }
 
@@ -406,7 +406,7 @@
 
 .timeline-title {
   text-align: center;
-  font-size: clamp(20px, 2.5vw, 3em);
+  font-size: clamp(28px, 1.5vw, 3.8em);
   font-weight: 700;
   color: var(--black);
   text-transform: uppercase;
@@ -461,21 +461,21 @@
 
 .timeline-year {
   padding-bottom: 0.5em;
-  font-size: clamp(12px, 1.2vw, 1.6em);
+  font-size: clamp(18px, 1.1vw, 2.6em);
   font-weight: bold;
   color: var(--bg-red-show);
 }
 
 .timeline-text {
-  font-size: clamp(10px, 0.9vw, 1.2em);
+  font-size: clamp(16px, 0.8vw, 1.8em);
   color: var(--text-gray);
   font-weight: 300;
 }
 
 /* === TEAM SECTION === */
 .team-title {
+  font-size: clamp(28px, 1.5vw, 3.8em);
   text-align: center;
-  font-size: clamp(20px, 2.5vw, 3em);
   font-weight: 700;
   color: var(--black);
   text-transform: uppercase;
@@ -513,14 +513,14 @@
 
 .team-name {
   margin-top: 1rem;
-  font-size: clamp(10px, 1vw, 1.4em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   font-weight: 700;
   color: var(--black);
 }
 
 .team-desc {
   margin-top: 0.25rem;
-  font-size: clamp(10px, 0.9vw, 1.2em);
+  font-size: clamp(14px, 1vw, 2.4em);
   color: var(--text-gray);
 }
 
@@ -531,6 +531,7 @@
 }
 
 .team-btn {
+  font-size: clamp(16px, 1vw, 2.4em);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -539,7 +540,6 @@
   border: 1px solid var(--bg-red-show);
   background-color: var(--white);
   color: var(--bg-red-show);
-  font-size: clamp(10px, 1vw, 1.4em);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -568,7 +568,7 @@
 }
 
 .collection-title {
-  font-size: clamp(20px, 2.5vw, 3em);
+  font-size: clamp(28px, 1.5vw, 3.8em);
   font-weight: bold;
   color: var(--black);
 }
@@ -672,12 +672,12 @@
 }
 
 .testimonial-name {
-  font-size: clamp(10px, 1vw, 1.4em);
+  font-size: clamp(12px, 1vw, 2.4em);
   font-weight: bold;
 }
 
 .testimonial-loc {
-  font-size: clamp(10px, 0.9vw, 1.2em);
+  font-size: clamp(12px, 1vw, 2.4em);
   color: var(--bg-red-show);
 }
 
@@ -687,13 +687,13 @@
 }
 
 .star-icon {
-  width: 1.2em;
-  height: 1.2em;
+  width: 2.4em;
+  height: 2.4em;
   color: var(--bg-red-show);
 }
 
 .testimonial-text {
-  font-size: clamp(10px, 1vw, 1.4em);
+  font-size: clamp(12px, 1vw, 2.4em);
   color: var(--text-gray);
   margin-top: 1.5rem;
 }
@@ -722,13 +722,19 @@
   color: var(--bg-red-show);
 }
 
+.policy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 .policy-title {
-  font-size: clamp(10px, 1vw, 1.4em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   font-weight: bold;
 }
 
 .policy-desc {
-  font-size: clamp(10px, 0.9vw, 1.2em);
+  font-size: clamp(14px, 1vw, 2.4em);
   color: var(--text-gray);
   line-height: 1.6;
 }
@@ -742,7 +748,7 @@
 }
 
 .faq-heading {
-  font-size: clamp(20px, 2vw, 2.8em);
+  font-size: clamp(28px, 1.5vw, 3.8em);
   font-weight: bold;
   line-height: 1.2;
   color: var(--black);
@@ -776,14 +782,14 @@
 }
 
 .faq-question-text {
-  font-size: clamp(10px, 1vw, 1.4em);
+  font-size: clamp(16px, 1.1vw, 2.6em);
   font-weight: 500;
   color: var(--black);
 }
 
 .faq-icon {
-  width: 1.2em;
-  height: 1.2em;
+  width: 2.4em;
+  height: 2.4em;
   flex-shrink: 0;
   color: var(--bg-red-show);
 }
@@ -794,7 +800,7 @@
 }
 
 .faq-answer p {
-  font-size: clamp(14px, 1.2vw, 1.6em);
+  font-size: clamp(14px, 1vw, 2.4em);
   color: var(--text-gray);
   margin: 0;
   line-height: 1.6;
