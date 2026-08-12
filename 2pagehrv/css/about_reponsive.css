@@ -187,6 +187,11 @@
   .collection-content {
     padding: 0.8em;
   }
+
+  .timeline-item:last-child {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {

@@ -23,25 +23,28 @@ const swiperMain = (function () {
 
   function initFAQ() {
     const faqQuestions = document.querySelectorAll(".faq-question");
-    faqQuestions.forEach((question) => {
-      question.addEventListener("click", () => {
-        const faqItem = question.closest(".faq-item");
-        const isExpanded = question.getAttribute("aria-expanded") === "true";
-        if (isExpanded) {
-          faqItem.classList.remove("active");
-          question.setAttribute("aria-expanded", "false");
-        } else {
-          faqItem.classList.add("active");
-          question.setAttribute("aria-expanded", "true");
+    faqQuestions.forEach((q) => {
+      q.addEventListener("click", () => {
+        const faqItem = q.closest(".faq-item");
+        const isExpanded = q.getAttribute("aria-expanded") === "true";
+        const activeItem = document.querySelector(".faq-item.active");
+
+        if (activeItem && activeItem !== faqItem) {
+          activeItem.classList.remove("active");
+          const activeBtn = activeItem.querySelector(".faq-question");
+          if (activeBtn) activeBtn.setAttribute("aria-expanded", "false");
         }
+
+        faqItem.classList.toggle("active");
+        q.setAttribute("aria-expanded", !isExpanded ? "true" : "false");
       });
     });
   }
 
   return {
     init: function () {
-      initSwiper();
       initFAQ();
+      initSwiper();
     },
   };
 })();

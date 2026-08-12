@@ -302,15 +302,15 @@
             <div class="contact-right">
                 <div class="contact-form">
                     <h2>Thông tin hỗ trợ</h2>
-                    <form class="contact-form_ele" id="maybi-contact-form">
+                    <form class="contact-form_ele" id="maybi-contact-form" method="POST" action="#">
                         <div class="contact-form_ele_item">
                             <label>Họ tên <span>*</span></label>
-                            <input type="text" name="ho_ten" placeholder="Nhập họ và tên">
+                            <input type="text" name="name" placeholder="Nhập họ và tên">
                         </div>
 
                         <div class="contact-form_ele_item">
                             <label>Điện thoại <span>*</span></label>
-                            <input type="text" name="so_dien_thoai" placeholder="Nhập số điện thoại">
+                            <input type="text" name="phone" placeholder="Nhập số điện thoại">
                         </div>
 
                         <div class="contact-form_ele_item"><label for="">Email <span>*</span></label>
@@ -318,17 +318,17 @@
                         </div>
 
                         <div class="contact-form_ele_item"> <label for="">Chủ đề <span>*</span></label>
-                            <select name="chu_de">
+                            <select name="topic">
                                 <option value="0">Chọn chủ đề</option>
-                                <option value="1">Tư vấn sản phẩm</option>
-                                <option value="2">Hỗ trợ đơn hàng</option>
-                                <option value="3">Đổi trả - bảo hành</option>
-                                <option value="4">Hợp tác - khác</option>
+                                <option value="Tư vấn sản phẩm">Tư vấn sản phẩm</option>
+                                <option value="Hỗ trợ đơn hàng">Hỗ trợ đơn hàng</option>
+                                <option value="Đổi trả - bảo hành">Đổi trả - bảo hành</option>
+                                <option value="Hợp tác - khác">Hợp tác - khác</option>
                             </select>
                         </div>
 
                         <div class="contact-form_ele_item"><label for="">Nội dung <span>*</span></label>
-                            <textarea name="noi_dung" rows="6" placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea>
+                            <textarea name="content" rows="6" placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea>
                         </div>
 
                         <button type="submit" class="btn-submit" id="submit-contact-btn"><span>GỬI THÔNG
@@ -352,7 +352,7 @@
                 </div>
                 <h3 class="contact-title"><strong>HOTLINE</strong></h3>
                 <p class="contact-desc">Gọi ngay để được tư vấn miễn phí nhanh chóng</p>
-                <a href="tel:0911571166" class="contact-btn" target="_blank">
+                <a href="tel:0911571166" class="contact-btn">
                     <button>
                         <span>GỌI NGAY</span>
                     </button>
@@ -408,6 +408,7 @@
     <script src="./public/js/swiper-bundle.min.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/maybi_contact.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

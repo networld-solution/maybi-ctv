@@ -83,18 +83,18 @@
   color: var(--black);
 }
 
-/* Dots (Chấm phân trang) */
-/* .slider-dots {
+.swiper-pagination .swiper-pagination--left {
   position: absolute;
   bottom: 2em;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) !;
   display: flex;
   gap: 1em;
   z-index: 10;
+  width: auto;
 }
 
-.slider-dot {
+.swiper-pagination-bullet {
   width: 1rem;
   height: 1rem;
   border-radius: 0.5rem;
@@ -104,40 +104,13 @@
   transition:
     width 0.3s,
     background 0.3s;
-}
-
-.slider-dot.active {
-  width: 2.5rem;
-  background: var(--bg-red-show);
-} */
-.swiper-pagination {
-  position: absolute;
-  bottom: 2em;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  display: flex;
-  gap: 1em;
-  z-index: 10;
-  width: auto !important;
-}
-
-.swiper-pagination-bullet {
-  width: 1rem !important;
-  height: 1rem !important;
-  border-radius: 0.5rem !important;
-  background: var(--bg-gray) !important;
-  border: none !important;
-  cursor: pointer !important;
-  transition:
-    width 0.3s,
-    background 0.3s !important;
-  opacity: 1 !important;
-  margin: 0 !important;
+  opacity: 1;
+  margin: 0;
 }
 
 .swiper-pagination-bullet-active {
-  width: 2.5rem !important;
-  background: var(--bg-red-show) !important;
+  width: 2.5rem;
+  background: var(--bg-red-show);
 }
 
 /* === STATS SECTION === */
@@ -220,6 +193,7 @@
   font-weight: 300;
   font-size: clamp(16px, 1.1vw, 2.6em);
   color: var(--text-gray);
+  text-align: justify;
 }
 
 .text-red {
@@ -449,6 +423,8 @@
   text-align: center;
 }
 
+
+
 .timeline-dot {
   width: 1.5em;
   height: 1.5em;
@@ -468,7 +444,7 @@
 }
 
 .timeline-text {
-  font-size: clamp(16px, 0.8vw, 1.8em);
+  font-size: clamp(14px, 0.8vw, 1.8em);
   color: var(--text-gray);
   font-weight: 300;
 }
@@ -633,7 +609,7 @@
 }
 
 .collection-desc {
-  font-size: clamp(14px, 1.2vw, 1.6em);
+  font-size: clamp(11px, 1.2vw, 1.6em);
 }
 
 /* === TESTIMONIAL SECTION === */

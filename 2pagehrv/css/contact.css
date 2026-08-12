@@ -337,11 +337,12 @@
   background-color: var(--text-red);
   color: #fff;
   border: 0.1em solid var(--text-red);
+  transition: opacity 0.3s ease;
 }
 
-.btn-buy:hover {
-  background-color: #fff;
-  color: var(--text-red);
+.btn-buy:hover,
+.btn-submit:hover {
+  opacity: 0.9;
 }
 
 .btn-sale {
@@ -351,5 +352,6 @@
 }
 
 .btn-sale:hover {
-  border-color: var(--black);
+  border-color: var(--text-red);
+  color: var(--text-red);
 }
