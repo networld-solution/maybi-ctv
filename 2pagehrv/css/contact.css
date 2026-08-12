@@ -314,7 +314,6 @@
 .discover-list_title {
   font-size: clamp(30px, 2vw, 5.2em);
   line-height: 1.2;
-  color: var(--black);
 }
 
 .discover-list_item {

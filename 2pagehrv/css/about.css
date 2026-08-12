@@ -306,9 +306,7 @@
 
 .value-title {
   font-size: clamp(18px, 1.5vw, 3.8em);
-  font-weight: 700;
   letter-spacing: 0.025em;
-  color: var(--black);
 }
 
 .value-text {
@@ -423,8 +421,6 @@
   text-align: center;
 }
 
-
-
 .timeline-dot {
   width: 1.5em;
   height: 1.5em;
@@ -491,8 +487,6 @@
 .team-name {
   margin-top: 1rem;
   font-size: clamp(16px, 1.1vw, 2.6em);
-  font-weight: 700;
-  color: var(--black);
 }
 
 .team-desc {
@@ -547,8 +541,6 @@
 .collection-title {
   font-size: clamp(24px, 1.5vw, 3.8em);
   line-height: 1.4;
-  font-weight: bold;
-  color: var(--black);
 }
 
 .collection-grid {
@@ -708,7 +700,6 @@
 
 .policy-title {
   font-size: clamp(14px, 1.1vw, 2.6em);
-  font-weight: bold;
 }
 
 .policy-desc {
@@ -727,9 +718,7 @@
 
 .faq-heading {
   font-size: clamp(24px, 1.5vw, 3.8em);
-  font-weight: bold;
   line-height: 1.2;
-  color: var(--black);
 }
 
 .faq-content {
